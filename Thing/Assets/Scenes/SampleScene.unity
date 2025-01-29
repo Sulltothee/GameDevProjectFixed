@@ -367,7 +367,7 @@ GameObject:
   - component: {fileID: 908779378}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -531,6 +531,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a42bc95a8d16a34f8e76f271b1f7c8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NumOfAbilities: 1
+  Projectiles:
+  - {fileID: 6377785366157315912, guid: 9ceffbebb82cd7a4fae5b74f5bab1c5c, type: 3}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0

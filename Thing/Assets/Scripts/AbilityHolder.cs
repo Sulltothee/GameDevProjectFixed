@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -5,8 +6,17 @@ using UnityEngine;
 
 public class AbilityHolder : MonoBehaviour
 {
+    //How Many abilities have been implemented
+    public int NumOfAbilities;
+
+    //all the projectiles for the weapons
+    public GameObject[] Projectiles;
+
     //All the possible Types of abilities
     AbilityType[] AbilityTypes;
+
+    //This points to the index of the currently selected abilities
+    int AbilityIndex = 0;   
 
     //The currently Held abilities
     AbilityInstance[] CurrentAbilities;
@@ -14,17 +24,25 @@ public class AbilityHolder : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Instantializing the ability slots
         CurrentAbilities = new AbilityInstance[4];
-        for (int i = 0; i < AbilityTypes.Length; i++)
-        {
-            CurrentAbilities[i].Empty();
-        }
+
+        //Assigning all the abilities there info
+        //All the projectile weapons
+        AbilityTypes = new AbilityType[NumOfAbilities];
+        AbilityTypes[0] = new ProjectileWeapon(AbilityType.Names.Pistol, Projectiles[0]);
+
+
+        //Test Stuff
+        CurrentAbilities[0] = new AbilityInstance(AbilityTypes[0]);
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.Mouse0)) {
+            CurrentAbilities[AbilityIndex].Activate();
+        }
     }
 
 
@@ -60,17 +78,20 @@ public class ProjectileWeapon : AbilityType
     //The activate function is replacing the other one, the referrenced projectile is instantiated at the position and rotation of the camera
     public override void Activate()
     {
-        GameObject.Instantiate(Projectile, Player.transform.position, Camera.main.transform.rotation);   
+        GameObject.Instantiate(Projectile, Camera.main.transform.position, Camera.main.transform.rotation);   
     }
 
     //A constructor for projectile abilities
-    public ProjectileWeapon(Names Name, GameObject Projectile)
+    public ProjectileWeapon(Names Name, GameObject projectile)
     {
         //the name of the ability
         name = Name;
 
         //a referrence to the player
         Player = GameObject.FindWithTag("Player");
+
+        //A refference to the prefab
+        Projectile = projectile;
 
         //Assigning unique values depending on the name
         switch (Name)
