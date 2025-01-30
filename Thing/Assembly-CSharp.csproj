@@ -61,9 +61,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\CameraTracking.cs" />
-    <Compile Include="Assets\BulletTestScript.cs" />
     <Compile Include="Assets\Scripts\AbilityHolder.cs" />
     <Compile Include="Assets\Scripts\PlayerMove.cs" />
+    <Compile Include="Assets\Scripts\BulletTestScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
