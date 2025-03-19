@@ -1,14 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\rando\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\",
+  "WorkspaceRootPath": "C:\\Users\\89500\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|C:\\Users\\rando\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\assets\\scripts\\abilityholder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\abilityholder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|c:\\users\\89500\\documents\\github\\gamedevprojectfixed\\thing\\assets\\scripts\\cameratracking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cameratracking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|c:\\users\\rando\\documents\\github\\gamedevprojectfixed\\thing\\assets\\scripts\\bullettestscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|C:\\Users\\89500\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\assets\\scripts\\bullettestscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bullettestscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|c:\\users\\89500\\documents\\github\\gamedevprojectfixed\\thing\\assets\\scripts\\abilityholder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\abilityholder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,19 +22,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CameraTracking.cs",
+              "DocumentMoniker": "C:\\Users\\89500\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Scripts\\CameraTracking.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CameraTracking.cs",
+              "ToolTip": "C:\\Users\\89500\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Scripts\\CameraTracking.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CameraTracking.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T09:12:59.105Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "BulletTestScript.cs",
-              "DocumentMoniker": "C:\\Users\\rando\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Scripts\\BulletTestScript.cs",
+              "DocumentMoniker": "C:\\Users\\89500\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Scripts\\BulletTestScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\BulletTestScript.cs",
-              "ToolTip": "C:\\Users\\rando\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Scripts\\BulletTestScript.cs",
+              "ToolTip": "C:\\Users\\89500\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Scripts\\BulletTestScript.cs",
               "RelativeToolTip": "Assets\\Scripts\\BulletTestScript.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -39,11 +52,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "AbilityHolder.cs",
-              "DocumentMoniker": "C:\\Users\\rando\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Scripts\\AbilityHolder.cs",
+              "DocumentMoniker": "C:\\Users\\89500\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Scripts\\AbilityHolder.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\AbilityHolder.cs",
-              "ToolTip": "C:\\Users\\rando\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Scripts\\AbilityHolder.cs",
+              "ToolTip": "C:\\Users\\89500\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Scripts\\AbilityHolder.cs",
               "RelativeToolTip": "Assets\\Scripts\\AbilityHolder.cs",
               "ViewState": "AQIAAP8AAAAAAAAAAAAiwAIBAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
