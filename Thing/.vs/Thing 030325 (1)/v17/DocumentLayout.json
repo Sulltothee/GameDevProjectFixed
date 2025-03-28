@@ -1,0 +1,89 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\rando\\Downloads\\Thing 030325 (1)\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0018CF6F-000F-8F01-31BE-27A28F2AAA3D}|Assembly-CSharp.csproj|c:\\users\\rando\\downloads\\thing 030325 (1)\\assets\\punchscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0018CF6F-000F-8F01-31BE-27A28F2AAA3D}|Assembly-CSharp.csproj|solutionrelative:assets\\punchscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0018CF6F-000F-8F01-31BE-27A28F2AAA3D}|Assembly-CSharp.csproj|C:\\Users\\rando\\Downloads\\Thing 030325 (1)\\assets\\scripts\\rangegrunt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0018CF6F-000F-8F01-31BE-27A28F2AAA3D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rangegrunt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0018CF6F-000F-8F01-31BE-27A28F2AAA3D}|Assembly-CSharp.csproj|C:\\Users\\rando\\Downloads\\Thing 030325 (1)\\assets\\scripts\\playermove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0018CF6F-000F-8F01-31BE-27A28F2AAA3D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0018CF6F-000F-8F01-31BE-27A28F2AAA3D}|Assembly-CSharp.csproj|C:\\Users\\rando\\Downloads\\Thing 030325 (1)\\assets\\scripts\\abilityholder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0018CF6F-000F-8F01-31BE-27A28F2AAA3D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\abilityholder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RangeGrunt.cs",
+              "DocumentMoniker": "C:\\Users\\rando\\Downloads\\Thing 030325 (1)\\Assets\\Scripts\\RangeGrunt.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\RangeGrunt.cs",
+              "ToolTip": "C:\\Users\\rando\\Downloads\\Thing 030325 (1)\\Assets\\Scripts\\RangeGrunt.cs",
+              "RelativeToolTip": "Assets\\Scripts\\RangeGrunt.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAowAkAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T17:49:36.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PunchScript.cs",
+              "DocumentMoniker": "C:\\Users\\rando\\Downloads\\Thing 030325 (1)\\Assets\\PunchScript.cs",
+              "RelativeDocumentMoniker": "Assets\\PunchScript.cs",
+              "ToolTip": "C:\\Users\\rando\\Downloads\\Thing 030325 (1)\\Assets\\PunchScript.cs",
+              "RelativeToolTip": "Assets\\PunchScript.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T17:44:50.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AbilityHolder.cs",
+              "DocumentMoniker": "C:\\Users\\rando\\Downloads\\Thing 030325 (1)\\Assets\\Scripts\\AbilityHolder.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\AbilityHolder.cs",
+              "ToolTip": "C:\\Users\\rando\\Downloads\\Thing 030325 (1)\\Assets\\Scripts\\AbilityHolder.cs",
+              "RelativeToolTip": "Assets\\Scripts\\AbilityHolder.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAgwDcAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T21:47:52.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlayerMove.cs",
+              "DocumentMoniker": "C:\\Users\\rando\\Downloads\\Thing 030325 (1)\\Assets\\Scripts\\PlayerMove.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMove.cs",
+              "ToolTip": "C:\\Users\\rando\\Downloads\\Thing 030325 (1)\\Assets\\Scripts\\PlayerMove.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerMove.cs",
+              "ViewState": "AQIAAJ8AAAAAAAAAAAAawLQAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T14:09:13.862Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

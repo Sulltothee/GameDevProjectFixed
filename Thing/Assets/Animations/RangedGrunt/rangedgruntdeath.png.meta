@@ -1,0 +1,476 @@
+fileFormatVersion: 2
+guid: 219f0f4bf49513f4f9275dd83d12af74
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rangedgruntdeath_14
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 2366
+        width: 591
+        height: 1174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e7682ca0d1a51d40b6be75d9f967d7d
+      internalID: -81071152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rangedgruntdeath_15
+      rect:
+        serializedVersion: 2
+        x: 2626
+        y: 2366
+        width: 572
+        height: 1156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b33eef16d5927c42a7b143320c22618
+      internalID: -549938998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rangedgruntdeath_24
+      rect:
+        serializedVersion: 2
+        x: 4710
+        y: 2366
+        width: 573
+        height: 1096
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98eae851011c46144b8595ed8524e28d
+      internalID: -663480887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rangedgruntdeath_27
+      rect:
+        serializedVersion: 2
+        x: 6776
+        y: 2312
+        width: 699
+        height: 1090
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c88a187fd6d392489e0506dace032c6
+      internalID: -167044213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rangedgruntdeath_42
+      rect:
+        serializedVersion: 2
+        x: 8658
+        y: 2300
+        width: 1190
+        height: 1353
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 046e7ef91df82dc46ad056f5c46d77f6
+      internalID: 738786291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rangedgruntdeath_49
+      rect:
+        serializedVersion: 2
+        x: 10676
+        y: 2288
+        width: 1250
+        height: 1329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb22161e1c74e7b4c9070af6ca829ef2
+      internalID: -1410530082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rangedgruntdeath_53
+      rect:
+        serializedVersion: 2
+        x: 12149
+        y: 2733
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c89cde28eafbda4198a984436bf6a71
+      internalID: -906533594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rangedgruntdeath_58
+      rect:
+        serializedVersion: 2
+        x: 6393
+        y: 255
+        width: 1528
+        height: 1794
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0bad49657910ef4793fb0fa581d98c4
+      internalID: 238431588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rangedgruntdeath_60
+      rect:
+        serializedVersion: 2
+        x: 8469
+        y: 229
+        width: 1529
+        height: 1820
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b13780d11032aca40ae1f5e36b22c473
+      internalID: 1179898648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rangedgruntdeath_62
+      rect:
+        serializedVersion: 2
+        x: 10473
+        y: 284
+        width: 1507
+        height: 1772
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcd85e0ca6f82194e877056fc4a0d288
+      internalID: 1510228591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rangedgruntdeath_64
+      rect:
+        serializedVersion: 2
+        x: 2451
+        y: 289
+        width: 1079
+        height: 1702
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b71908437dc8e74d97816a3f396d3db
+      internalID: -635672395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rangedgruntdeath_65
+      rect:
+        serializedVersion: 2
+        x: 4481
+        y: 253
+        width: 1314
+        height: 1788
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d1e02304408db947961156f50f05a04
+      internalID: -1204382030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rangedgruntdeath_68
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 235
+        width: 1194
+        height: 1589
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbe03d8b5fb9565448ab9bbbfe16c5cd
+      internalID: 1127073697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b56b416242c103a469c75a1c25a67e07
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      rangedgruntdeath_0: -161427397
+      rangedgruntdeath_1: -814863619
+      rangedgruntdeath_10: 256193940
+      rangedgruntdeath_11: 875836147
+      rangedgruntdeath_12: -1040359824
+      rangedgruntdeath_13: 438917065
+      rangedgruntdeath_14: -81071152
+      rangedgruntdeath_15: -549938998
+      rangedgruntdeath_16: 1845196025
+      rangedgruntdeath_17: 885369690
+      rangedgruntdeath_18: -1691615516
+      rangedgruntdeath_19: -1447437867
+      rangedgruntdeath_2: -1071998855
+      rangedgruntdeath_20: 10071571
+      rangedgruntdeath_21: 394148262
+      rangedgruntdeath_22: 1322173280
+      rangedgruntdeath_23: -1976857945
+      rangedgruntdeath_24: -663480887
+      rangedgruntdeath_25: -887455223
+      rangedgruntdeath_26: 407618977
+      rangedgruntdeath_27: -167044213
+      rangedgruntdeath_28: -1203593773
+      rangedgruntdeath_29: -602544054
+      rangedgruntdeath_3: -201240164
+      rangedgruntdeath_30: 1695925914
+      rangedgruntdeath_31: -1140199916
+      rangedgruntdeath_32: -1346055550
+      rangedgruntdeath_33: 167725315
+      rangedgruntdeath_34: -907552326
+      rangedgruntdeath_35: 2098749454
+      rangedgruntdeath_36: -1097691522
+      rangedgruntdeath_37: -1598763844
+      rangedgruntdeath_38: 1321444346
+      rangedgruntdeath_39: -990620780
+      rangedgruntdeath_4: -346969300
+      rangedgruntdeath_40: 1641931808
+      rangedgruntdeath_41: 1174175302
+      rangedgruntdeath_42: 738786291
+      rangedgruntdeath_43: 1649387
+      rangedgruntdeath_44: 2030251789
+      rangedgruntdeath_45: 546932666
+      rangedgruntdeath_46: 1070807716
+      rangedgruntdeath_47: 1447346073
+      rangedgruntdeath_48: -487030130
+      rangedgruntdeath_49: -1410530082
+      rangedgruntdeath_5: 502443094
+      rangedgruntdeath_50: 256721111
+      rangedgruntdeath_51: 1896810330
+      rangedgruntdeath_52: 1699682736
+      rangedgruntdeath_53: -906533594
+      rangedgruntdeath_54: -2124122839
+      rangedgruntdeath_55: -1982971406
+      rangedgruntdeath_56: 215775296
+      rangedgruntdeath_57: -639750349
+      rangedgruntdeath_58: 238431588
+      rangedgruntdeath_59: -976878945
+      rangedgruntdeath_6: -769012590
+      rangedgruntdeath_60: 1179898648
+      rangedgruntdeath_61: -143551566
+      rangedgruntdeath_62: 1510228591
+      rangedgruntdeath_63: 391261240
+      rangedgruntdeath_64: -635672395
+      rangedgruntdeath_65: -1204382030
+      rangedgruntdeath_66: 986194952
+      rangedgruntdeath_67: -1100804409
+      rangedgruntdeath_68: 1127073697
+      rangedgruntdeath_69: 814829325
+      rangedgruntdeath_7: 1037898757
+      rangedgruntdeath_70: 654991780
+      rangedgruntdeath_71: -1223359790
+      rangedgruntdeath_72: 1180587676
+      rangedgruntdeath_8: -1377560219
+      rangedgruntdeath_9: 1216064303
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

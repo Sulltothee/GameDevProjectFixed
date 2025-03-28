@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\89667\\Downloads\\thing 280225\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{22E8E513-1EB7-FA20-146B-3A1927DA1674}|Assembly-CSharp.csproj|c:\\users\\89667\\downloads\\thing 280225\\assets\\scripts\\abilityholder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22E8E513-1EB7-FA20-146B-3A1927DA1674}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\abilityholder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22E8E513-1EB7-FA20-146B-3A1927DA1674}|Assembly-CSharp.csproj|c:\\users\\89667\\downloads\\thing 280225\\assets\\meleegrunt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22E8E513-1EB7-FA20-146B-3A1927DA1674}|Assembly-CSharp.csproj|solutionrelative:assets\\meleegrunt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22E8E513-1EB7-FA20-146B-3A1927DA1674}|Assembly-CSharp.csproj|c:\\users\\89667\\downloads\\thing 280225\\assets\\scripts\\molotovexplosion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22E8E513-1EB7-FA20-146B-3A1927DA1674}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\molotovexplosion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22E8E513-1EB7-FA20-146B-3A1927DA1674}|Assembly-CSharp.csproj|c:\\users\\89667\\downloads\\thing 280225\\assets\\scripts\\dumm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22E8E513-1EB7-FA20-146B-3A1927DA1674}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dumm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MolotovExplosion.cs",
+              "DocumentMoniker": "C:\\Users\\89667\\Downloads\\thing 280225\\Assets\\Scripts\\MolotovExplosion.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MolotovExplosion.cs",
+              "ToolTip": "C:\\Users\\89667\\Downloads\\thing 280225\\Assets\\Scripts\\MolotovExplosion.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MolotovExplosion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T11:40:52.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Dumm.cs",
+              "DocumentMoniker": "C:\\Users\\89667\\Downloads\\thing 280225\\Assets\\Scripts\\Dumm.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Dumm.cs",
+              "ToolTip": "C:\\Users\\89667\\Downloads\\thing 280225\\Assets\\Scripts\\Dumm.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Dumm.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwDMAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T11:36:01.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MeleeGrunt.cs",
+              "DocumentMoniker": "C:\\Users\\89667\\Downloads\\thing 280225\\Assets\\MeleeGrunt.cs",
+              "RelativeDocumentMoniker": "Assets\\MeleeGrunt.cs",
+              "ToolTip": "C:\\Users\\89667\\Downloads\\thing 280225\\Assets\\MeleeGrunt.cs",
+              "RelativeToolTip": "Assets\\MeleeGrunt.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T11:19:42.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AbilityHolder.cs",
+              "DocumentMoniker": "C:\\Users\\89667\\Downloads\\thing 280225\\Assets\\Scripts\\AbilityHolder.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\AbilityHolder.cs",
+              "ToolTip": "C:\\Users\\89667\\Downloads\\thing 280225\\Assets\\Scripts\\AbilityHolder.cs",
+              "RelativeToolTip": "Assets\\Scripts\\AbilityHolder.cs",
+              "ViewState": "AQIAANcAAAAAAAAAAAAswE4AAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T11:10:18.766Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

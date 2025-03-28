@@ -2,7 +2,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.Experimental.GlobalIllumination;
 using UnityEngine.UI;
 
 public class AbilityHolder : MonoBehaviour
@@ -34,9 +36,20 @@ public class AbilityHolder : MonoBehaviour
     //The amount of seconds left until each respective ability can be activated again
     float[] coolDowns;
 
+    public float CurrentCharge = 0;
+
+    public float PunchDamageDefault = 1;
+    float PunchDamage = 1;
+    public float MaxRange = 1;
+    public float PunchCooldown = 1;
+    float PunchCooldownCurrent = 0;
+
+
     // Start is called before the first frame update
     void Start()
     {
+        PunchDamage = PunchDamageDefault;
+
         //Instantializing the ability slots
         CurrentAbilities = new AbilityInstance[4];
         for (int i = 0; i < 4; i++)
@@ -46,8 +59,14 @@ public class AbilityHolder : MonoBehaviour
 
         //Assigning all the abilities their respective info
         AbilityTypes = new AbilityType[NumOfAbilities];
-        AbilityTypes[0] = new ProjectileWeapon(AbilityType.Names.Pistol, Projectiles[0], Icons[0], 1);
-        AbilityTypes[1] = new RayCastGun(AbilityType.Names.SniperRifle, Icons[1]);
+        AbilityTypes[0] = new ProjectileWeapon(AbilityType.Names.Pistol, Projectiles[0], Icons[0], 1); 
+        AbilityTypes[1] = new ProjectileWeapon(AbilityType.Names.Grenade, Projectiles[1], Icons[1]); 
+        AbilityTypes[2] = new ProjectileWeapon(AbilityType.Names.StickyNade, Projectiles[2], Icons[2]); 
+        AbilityTypes[3] = new ProjectileWeapon(AbilityType.Names.Molotov, Projectiles[3], Icons[3]); 
+        AbilityTypes[4] = new RayCastGun(AbilityType.Names.SniperRifle, Icons[4]); 
+        AbilityTypes[5] = new RayCastGun(AbilityType.Names.AutoRifle, Icons[5]); 
+        AbilityTypes[6] = new RailGun(Icons[6]); 
+        AbilityTypes[7] = new ProjectileWeapon(AbilityType.Names.GrenadeLauncher, Projectiles[4], Icons[7]); 
 
         //Instantializing the cooldowns
         coolDowns = new float[4]; 
@@ -55,20 +74,53 @@ public class AbilityHolder : MonoBehaviour
         //Test Stuff, Giving the player example abilities
         CurrentAbilities[0] = new AbilityInstance(AbilityTypes[0]);
         CurrentAbilities[1] = new AbilityInstance(AbilityTypes[1]);
+        CurrentAbilities[2] = new AbilityInstance(AbilityTypes[3]);
     }
 
     // Update is called once per frame
     void Update()
     {
         //When the player clicks (if the ability has remaining uses and the cooldown has passed), the current ability is used
-        if (Input.GetKeyDown(KeyCode.Mouse0) && CurrentAbilities[AbilityIndex].currentUses > 0 && coolDowns[AbilityIndex] <= 0) {
+        if (((Input.GetKeyDown(KeyCode.Mouse0) && CurrentAbilities[AbilityIndex].abilityType.ActivationType == AbilityType.ActivationTypes.Press) || (Input.GetKey(KeyCode.Mouse0) && CurrentAbilities[AbilityIndex].abilityType.ActivationType == AbilityType.ActivationTypes.Auto) || (Input.GetKeyUp(KeyCode.Mouse0) && CurrentAbilities[AbilityIndex].abilityType.ActivationType == AbilityType.ActivationTypes.Charge)) && CurrentAbilities[AbilityIndex].currentUses > 0 && coolDowns[AbilityIndex] <= 0) {
             CurrentAbilities[AbilityIndex].Activate();
             if (CurrentAbilities[AbilityIndex].currentUses > 0) { coolDowns[AbilityIndex] = CurrentAbilities[AbilityIndex].abilityType.Cooldown; }
         }
+        else if((Input.GetKey(KeyCode.Mouse0) && CurrentAbilities[AbilityIndex].abilityType.ActivationType == AbilityType.ActivationTypes.Charge))
+        {
+            CurrentCharge += Time.deltaTime; Math.Clamp(CurrentCharge, 0, 1);
+        }
         
         //Scroll wheel changing what ability is selected
-        if(Input.mouseScrollDelta.y < 0) { AbilityIndex++; if (AbilityIndex > 3) { AbilityIndex = 0; } }
-        else if (Input.mouseScrollDelta.y > 0) { AbilityIndex--; if (AbilityIndex < 0) { AbilityIndex = 3; } }
+        if(Input.mouseScrollDelta.y < 0) { AbilityIndex++; if (AbilityIndex > 3) { AbilityIndex = 0; CurrentCharge = 0; } }
+        else if (Input.mouseScrollDelta.y > 0) { AbilityIndex--; if (AbilityIndex < 0) { AbilityIndex = 3; CurrentCharge = 0; } }
+
+        //The Punch
+        if(Input.GetKeyDown(KeyCode.V) && PunchCooldownCurrent <= 0) 
+        {
+            RaycastHit[] Hits = Physics.RaycastAll(transform.position, Camera.main.transform.forward, MaxRange, LayerMask.GetMask("Terrain", "Enemies"));
+
+            bool HasHitTerrain = false;
+            int HitIndex = 0;
+            while (!HasHitTerrain && HitIndex < Hits.Length)
+            {
+                if (Hits[HitIndex].collider.gameObject.tag == "Terrain")
+                {
+                    HasHitTerrain = true;
+                }
+                else
+                {
+                    Hits[HitIndex].collider.gameObject.SendMessage("TakeDamage", PunchDamage, SendMessageOptions.DontRequireReceiver);
+                }
+
+                HitIndex++;
+            }
+            GetComponent<AbilityHolder>().CurrentCharge = 0;
+            PunchCooldownCurrent = PunchCooldown;
+        }
+        else if (PunchCooldownCurrent>0)
+        {
+            PunchCooldownCurrent -= Time.deltaTime;
+        }
     }
 
     private void FixedUpdate()
@@ -87,11 +139,28 @@ public class AbilityHolder : MonoBehaviour
 
                 //if the cooldown is not over the ability icon is set to black (change this later)
                 if (coolDowns[i]>0) { IconSlots[i].GetComponent<Image>().color = Color.black; coolDowns[i] -= 0.2f; }
+
                 //if the cooldown is over the color is set to white
                 else { IconSlots[i].GetComponent<Image>().color = Color.white; }
             }
             
         }
+    }
+
+    public bool GiveAbility(AbilityType.Names abilityType)
+    {
+        int AbilityIndex = -1;
+        for(int i = 0;i < 4; i++)
+        {
+            if (CurrentAbilities[i].abilityType.name == AbilityType.Names.Empty)
+            {
+                AbilityIndex = i;
+                break;
+            }
+        }
+
+        if(AbilityIndex > -1) { CurrentAbilities[AbilityIndex] = new AbilityInstance(AbilityTypes[(int)abilityType - 1]); return true; }
+        else return false;
     }
 }
 
@@ -105,7 +174,7 @@ public abstract class AbilityType
     public GameObject Player;
 
     //The names of every ability type/ the name of the instance (default empty)
-    public enum Names { Empty, Pistol, SniperRifle }
+    public enum Names { Empty, Pistol, Grenade, StickyNade, Molotov, SniperRifle, AutoRifle, RailGun, GrenadeLauncher }
     public Names name = Names.Empty;
 
     //How many times an instance of this ability can be used before it vanished (default 0)
@@ -115,7 +184,7 @@ public abstract class AbilityType
     public float Cooldown = 0;
 
     //How this ability is used eg hold for a flamethrower, Press for a pistol  (Empty is purely for the empty class)
-    public enum ActivationTypes { Empty, Press, Hold }
+    public enum ActivationTypes { Empty, Press, Auto, Charge }
     public ActivationTypes ActivationType = ActivationTypes.Empty;
 
     //An empty function that is replaced with whatever the unique abilities do
@@ -156,6 +225,7 @@ public class ProjectileWeapon : AbilityType
             bullet.transform.GetChild(0).gameObject.SetActive(true);
             bullet.transform.GetChild(0).localPosition = Vector3.zero;
             bullet.transform.GetChild(0).localRotation = Projectile.transform.GetChild(0).localRotation;
+            bullet.transform.GetChild(0).gameObject.GetComponent<Collider>().excludeLayers = LayerMask.GetMask("Items", "Player");
         }
     }
 
@@ -187,6 +257,24 @@ public class ProjectileWeapon : AbilityType
                     ActivationType = ActivationTypes.Press;
                     break;
             }
+
+            //if the ability is the Grenade, or Sticky Grenade or Molotov...
+            case Names.Grenade:
+            case Names.StickyNade:
+            case Names.Molotov:
+                {
+                    Uses = 1;
+                    ActivationType = ActivationTypes.Press;
+                    break;
+                }
+
+            //if the ability is the Grenade launcher...
+            case Names.GrenadeLauncher:
+                {
+                    Uses = 3;
+                    ActivationType = ActivationTypes.Press;
+                    break;
+                }
         }
     }
 }
@@ -213,7 +301,7 @@ public abstract class RaycastAbility : AbilityType
     //Creates a raycast then interacts with that which is hit
     public override void Activate()
     {
-        RaycastHit[] Hits = Physics.RaycastAll(Player.transform.position, Camera.main.transform.forward, MaxLength);
+        RaycastHit[] Hits = Physics.RaycastAll(Player.transform.position, Camera.main.transform.forward, MaxLength, LayerMask.GetMask("Terrain", "Enemies"));
         DoWithRaycast(Hits);
     }
 
@@ -248,7 +336,16 @@ public class RayCastGun : RaycastAbility
                     Uses = 1;
                     ActivationType = ActivationTypes.Press;
                     Damage = 8;
-                    MaxLength = 8;
+                    MaxLength = 20;
+                    break;
+                }
+            case Names.AutoRifle:
+                {
+                    Uses = 3;
+                    ActivationType = ActivationTypes.Auto;
+                    Damage = 4;
+                    MaxLength = 20;
+                    Cooldown = 1f;
                     break;
                 }
         }
@@ -259,11 +356,46 @@ public class RayCastGun : RaycastAbility
     {
         if(Hits.Length > 0)
         {
-            Hits[0].collider.gameObject.SendMessage("TakeDamage", Damage);
+
+            Hits[0].collider.gameObject.SendMessage("TakeDamage", Damage, SendMessageOptions.DontRequireReceiver);
         }
     }
 }
 
+public class RailGun : RaycastAbility
+{
+    public float Damage = 8;
+
+    public RailGun(Sprite icon)
+    {
+        name = Names.RailGun;
+        Icon = icon;
+        Player = GameObject.FindWithTag("Player");
+        Uses = 1;
+        ActivationType = ActivationTypes.Charge;
+        MaxLength = 30;
+    }
+
+    public override void DoWithRaycast(RaycastHit[] Hits)
+    {
+        bool HasHitTerrain = false;
+        int HitIndex = 0;
+        while(!HasHitTerrain && HitIndex < Hits.Length)
+        {
+            if (Hits[HitIndex].collider.gameObject.tag == "Terrain")
+            {
+                HasHitTerrain = true;
+            }
+            else
+            {
+                Hits[HitIndex].collider.gameObject.SendMessage("TakeDamage", Mathf.Pow( Damage, Player.GetComponent<AbilityHolder>().CurrentCharge) , SendMessageOptions.DontRequireReceiver);
+            }
+
+            HitIndex++; 
+        }
+        Player.GetComponent<AbilityHolder>().CurrentCharge = 0;
+    }
+}
 
 //This is stored in the player's ability slots
 class AbilityInstance

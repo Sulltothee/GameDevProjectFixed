@@ -1,13 +1,27 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
+    //Health stuff
+    public float HP;
+    float Burntime;
+    public float BurnDmgPerSec;
+    public float InvulnerabilityTime;
+    float CurrentInvulnerabilityTime = 0;
 
+    //Movement variables
     [Tooltip("Quantity of Force applied to player when they Jump")] public float JumpStrength;
     [Tooltip("How much force is applied to the player every second")] public float MovementSpeed;
     [Tooltip("the Height of the player")] public float height;
+    [Tooltip("what the movement speed is multiplied by when sprinting")] public float SprintModifier = 1.5f;
+
+    //default values
+    float DefaultMoveSpeed;
+    float DefaultMass;
 
     //The rigidbody of the player
     Rigidbody rb;
@@ -16,9 +30,20 @@ public class PlayerMovement : MonoBehaviour
     Transform Orientation;
 
     //The cooldowns relating to the dash
-    public float DashCooldownMax;
+    [Tooltip("The minimum amount of time that passes between dashes")] public float DashCooldownMax;
     float DashCooldownCurrent = 0;
-    public float DashForce;
+    [Tooltip("The amount of force applied to the player when they dash")] public float DashForce;
+
+    //The current State of the player
+    public enum states { Walking, Sprinting, Sliding, WallRunning }
+    public states State;
+
+    //If the player is on the ground
+    bool isGrounded;
+
+    //WallJumping
+    Vector3 WallJumpAwayFrom;
+    bool Onwall;
 
     // Start is called before the first frame update
     void Start()
@@ -28,28 +53,115 @@ public class PlayerMovement : MonoBehaviour
 
         //Getting the object that stores the orientation of movement for the better
         Orientation = transform.GetChild(0);
+
+        //Setting defaults
+        DefaultMoveSpeed = MovementSpeed;
+        DefaultMass = rb.mass;
     }
 
     // Update is called once per frame
     void Update()
     {
+        //Reducing the player's invincibility timer
+        if (CurrentInvulnerabilityTime > 0) { CurrentInvulnerabilityTime -= Time.deltaTime; }
+
         //Calling the method for moving the player
         MovePlayer();
 
-        bool isGrounded = Physics.Raycast(transform.position, Vector3.down, height * 0.5f);
+        isGrounded = Physics.Raycast(transform.position, Vector3.down, height * 0.5f);
 
         if (DashCooldownCurrent > 0) { DashCooldownCurrent -= Time.deltaTime; }
 
-        //If the player is on the ground and they have pressed space this frame, they jump
-        if (isGrounded && Input.GetKeyDown(KeyCode.Space))
+        //Jumping and Dashing
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            rb.AddForce(Vector3.up * JumpStrength);
+            //If the player is on the ground and they have pressed space this frame, they jump
+            if (isGrounded)
+            {
+                rb.AddForce(Vector3.up * JumpStrength);
+                State = states.Walking;
+            }
+            //If the player is on a wall they walljump
+            else if (Onwall)
+            {
+                rb.AddForce((transform.position - WallJumpAwayFrom).normalized * JumpStrength * 1.3f);
+                State = states.Walking;
+            }
+            //if the player is not on the ground and the dash timer has passed, they dash
+            else if (DashCooldownCurrent <= 0)
+            {
+                rb.AddForce(Camera.main.transform.forward * DashForce);
+                DashCooldownCurrent = DashCooldownMax;
+                State = states.Walking;
+            }
         }
-        //Otherwise if they're not on the ground and the dash cooldown has passed, the player dashes in the direction they're facing
-        else if (!isGrounded && DashCooldownCurrent <= 0 && Input.GetKeyDown(KeyCode.Space))
+        //Sliding
+        else if (Input.GetKeyDown(KeyCode.LeftControl) && State != states.Sliding && isGrounded)
         {
-            rb.AddForce(Camera.main.transform.forward * DashForce);
-            DashCooldownCurrent = DashCooldownMax;
+            rb.linearVelocity = Vector3.Scale(rb.linearVelocity, new Vector3(2, 0.5f, 2));
+            State = states.Sliding;
+        }
+        //Sprinting
+        else if (Input.GetKeyDown(KeyCode.LeftShift) && State != states.Sprinting && State != states.Sliding)
+        {
+            MovementSpeed *= SprintModifier;
+            State = states.Sprinting;
+        }
+        else if (State != states.Sprinting)
+        {
+            MovementSpeed = DefaultMoveSpeed;
+        }
+        else if (Input.GetKeyUp(KeyCode.LeftShift) && State == states.Sprinting)
+        {
+            State = states.Walking;
+        }
+
+        else if (Input.GetKeyDown(KeyCode.LeftControl) && State == states.Sliding)
+        {
+            State = states.Walking;
+        }
+
+        if (rb.linearVelocity.magnitude < 1)
+        {
+            State = states.Walking;
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if(Burntime > 0)
+        {
+            HP -= BurnDmgPerSec * 0.02f;
+            Burntime -= 0.02f;
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        //WallJumping
+        if (collision.gameObject.tag == "Terrain" && !isGrounded)
+        {
+            WallJumpAwayFrom = collision.GetContact(0).point;
+            Onwall = true;
+        }
+    }
+
+    private void OnCollisionStay(Collision collision)
+    {
+        //WallJumping
+        if (collision.gameObject.tag == "Terrain" && !isGrounded)
+        {
+            WallJumpAwayFrom = collision.GetContact(0).point;
+            Onwall = true;
+        }
+    }
+
+    private void OnCollisionExit(Collision collision) 
+    { 
+        //WallJumping
+        if (collision.gameObject.tag == "Terrain" && !isGrounded)
+        {
+            Onwall = false;
         }
     }
 
@@ -57,6 +169,32 @@ public class PlayerMovement : MonoBehaviour
     {
         //moves the player by adding force (good)
         Vector3 moveDirection = Orientation.forward * Input.GetAxisRaw("Vertical") + Orientation.right * Input.GetAxisRaw("Horizontal");
-        rb.AddForce(MovementSpeed * moveDirection.normalized * Time.deltaTime);
+
+        //if the player is moving too slow this speeds them up more
+        if (rb.linearVelocity.x < 0 == moveDirection.x < 0 && rb.linearVelocity.z < 0 == moveDirection.z < 0 && rb.linearVelocity.magnitude < 2f)
+        {
+            rb.AddForce(MovementSpeed * moveDirection.normalized * Time.deltaTime * 10f * Convert.ToInt16(State != states.Sliding));
+        }
+        else { rb.AddForce(MovementSpeed * moveDirection.normalized * Time.deltaTime * Convert.ToInt16(State != states.Sliding)); }
+    }
+
+    public void TakeDamage(float damage)
+    {
+        //Taking the damage
+        HP -= damage * Convert.ToInt16(CurrentInvulnerabilityTime <= 0) ;
+
+        //If the player is dead the level restarts
+        if(HP <= 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+
+        //Making the player invulnerable
+        if (CurrentInvulnerabilityTime <= 0) { CurrentInvulnerabilityTime = InvulnerabilityTime; }
+    }
+
+    public void ApplyBurn(float Time)
+    {
+        Burntime += Time;
     }
 }

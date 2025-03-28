@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\89667\\Downloads\\Thing 240325\\Thing 190325\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{94BE6FAC-2D9D-A6D9-BB40-19F1214CDB16}|Assembly-CSharp.csproj|c:\\users\\89667\\downloads\\thing 240325\\thing 190325\\assets\\scripts\\rangegrunt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94BE6FAC-2D9D-A6D9-BB40-19F1214CDB16}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rangegrunt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RangeGrunt.cs",
+              "DocumentMoniker": "C:\\Users\\89667\\Downloads\\Thing 240325\\Thing 190325\\Assets\\Scripts\\RangeGrunt.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\RangeGrunt.cs",
+              "ToolTip": "C:\\Users\\89667\\Downloads\\Thing 240325\\Thing 190325\\Assets\\Scripts\\RangeGrunt.cs",
+              "RelativeToolTip": "Assets\\Scripts\\RangeGrunt.cs",
+              "ViewState": "AQIAAH8AAAAAAAAAAAAAwIoAAACDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T09:26:09.098Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
