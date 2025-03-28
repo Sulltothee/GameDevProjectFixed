@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{94BE6FAC-2D9D-A6D9-BB40-19F1214CDB16}</ProjectGuid>
+    <ProjectGuid>{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -64,22 +64,45 @@
     <Compile Include="Assets\Scripts\AbilityCircle.cs" />
     <Compile Include="Assets\Scripts\StickyNade.cs" />
     <Compile Include="Assets\Scripts\DoorScript.cs" />
+    <Compile Include="Assets\Assets\Old Sea Port\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
     <Compile Include="Assets\Scripts\MeleeGrunt.cs" />
     <Compile Include="Assets\Scripts\Resta.cs" />
+    <Compile Include="Assets\Assets\Old Sea Port\EffectExamples\Shared\Scripts\GunAim.cs" />
     <Compile Include="Assets\Scripts\PlayerMove.cs" />
     <Compile Include="Assets\Scripts\BulletTestScript.cs" />
+    <Compile Include="Assets\Assets\Old Sea Port\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />
     <Compile Include="Assets\Scripts\GrenadeEnemy.cs" />
     <Compile Include="Assets\Scripts\MolotovScript.cs" />
     <Compile Include="Assets\Scripts\Dumm.cs" />
     <Compile Include="Assets\Scripts\AbilityItem.cs" />
     <Compile Include="Assets\Scripts\GrenadeScript.cs" />
+    <Compile Include="Assets\Assets\Old Sea Port\EffectExamples\Shared\Scripts\GunShoot.cs" />
+    <Compile Include="Assets\Assets\Laterns and candles\scripts\ExtendedFlycam.cs" />
+    <Compile Include="Assets\Assets\Old Sea Port\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
     <Compile Include="Assets\Scripts\CameraTracking.cs" />
     <Compile Include="Assets\Scripts\ExplosionScript.cs" />
     <Compile Include="Assets\Scripts\RangeGrunt.cs" />
     <Compile Include="Assets\OpeningDoor.cs" />
+    <Compile Include="Assets\Assets\Old Sea Port\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
+    <Compile Include="Assets\Assets\DBK\Scripts\DBK_ColorThemeSelect.cs" />
     <Compile Include="Assets\Scripts\AbilityHolder.cs" />
+    <Compile Include="Assets\Assets\Laterns and candles\scripts\CameraFacing.cs" />
+    <Compile Include="Assets\Assets\Rocks and Boulders 2\Shaders\RotateGameObject.cs" />
     <Compile Include="Assets\Scripts\Billboarder.cs" />
     <Compile Include="Assets\Scripts\MolotovExplosion.cs" />
+    <Compile Include="Assets\Assets\Old Sea Port\EffectExamples\Shared\Scripts\ParticleCollision.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Assets\Rocks and Boulders 2\Shaders\Blend SM2.shader" />
+    <None Include="Assets\Assets\DBK\Shaders\DBK_Rebar.shader" />
+    <None Include="Assets\Assets\Laterns and candles\Shaders\GlassStainedBumpDistort.shader" />
+    <None Include="Assets\Assets\Rocks and Boulders 2\Shaders\Blend SM3.shader" />
+    <None Include="Assets\Assets\Rocks and Boulders 2\Shaders\shader info.txt" />
+    <None Include="Assets\Assets\DBK\Shaders\DBK_ConcreteRubble.shader" />
+    <None Include="Assets\Assets\Old Sea Port\Shaders\MFEP_Stream.shader" />
+    <None Include="Assets\Assets\Old Sea Port\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
+    <None Include="Assets\Assets\DBK\Shaders\DBK_Concrete.shader" />
+    <None Include="Assets\Assets\DBK\HDRP &amp; URP\readme.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
