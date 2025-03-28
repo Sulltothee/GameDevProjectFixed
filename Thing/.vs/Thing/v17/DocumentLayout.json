@@ -3,44 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|c:\\users\\89667\\documents\\github\\gamedevprojectfixed\\thing\\assets\\scripts\\grenadescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\grenadescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|c:\\users\\89667\\documents\\github\\gamedevprojectfixed\\thing\\assets\\scripts\\enemies\\bigmelee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\bigmelee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|c:\\users\\89667\\documents\\github\\gamedevprojectfixed\\thing\\assets\\resta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|solutionrelative:assets\\resta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|c:\\users\\89667\\documents\\github\\gamedevprojectfixed\\thing\\assets\\scripts\\enemies\\rangegrunt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\rangegrunt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\assets\\scripts\\playermove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\assets\\scripts\\abilityholder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\abilityholder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\assets\\scripts\\abilityitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\abilityitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\assets\\scripts\\dumm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dumm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\assets\\scripts\\cameratracking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cameratracking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\89667\\documents\\github\\gamedevprojectfixed\\thing\\assets\\abilitycircle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\abilitycircle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\assets\\grenadescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\grenadescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\ExplosionScript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\ExplosionScript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|c:\\users\\89667\\documents\\github\\gamedevprojectfixed\\thing\\assets\\scripts\\enemies\\meleegrunt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\meleegrunt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,129 +22,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GrenadeScript.cs",
-              "DocumentMoniker": "C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Scripts\\GrenadeScript.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GrenadeScript.cs",
-              "ToolTip": "C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Scripts\\GrenadeScript.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GrenadeScript.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAxwAAAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "MeleeGrunt.cs",
+              "DocumentMoniker": "C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Scripts\\Enemies\\MeleeGrunt.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\MeleeGrunt.cs",
+              "ToolTip": "C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Scripts\\Enemies\\MeleeGrunt.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemies\\MeleeGrunt.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T11:46:16.735Z",
+              "WhenOpened": "2025-03-28T11:30:34.425Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Resta.cs",
-              "DocumentMoniker": "C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Resta.cs",
-              "RelativeDocumentMoniker": "Assets\\Resta.cs",
-              "ToolTip": "C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Resta.cs",
-              "RelativeToolTip": "Assets\\Resta.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA8AAAA",
+              "Title": "RangeGrunt.cs",
+              "DocumentMoniker": "C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Scripts\\Enemies\\RangeGrunt.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\RangeGrunt.cs",
+              "ToolTip": "C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Scripts\\Enemies\\RangeGrunt.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemies\\RangeGrunt.cs",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAIwGQAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T10:46:09.13Z",
+              "WhenOpened": "2025-03-28T11:29:04.503Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AbilityCircle.cs",
-              "DocumentMoniker": "C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\AbilityCircle.cs",
-              "RelativeDocumentMoniker": "Assets\\AbilityCircle.cs",
-              "ToolTip": "C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\AbilityCircle.cs",
-              "RelativeToolTip": "Assets\\AbilityCircle.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAgwBEAAAAfAAAA",
+              "DocumentIndex": 0,
+              "Title": "BigMelee.cs",
+              "DocumentMoniker": "C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Scripts\\Enemies\\BigMelee.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\BigMelee.cs",
+              "ToolTip": "C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Scripts\\Enemies\\BigMelee.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemies\\BigMelee.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAowEwAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T09:45:32.328Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CameraTracking.cs",
-              "DocumentMoniker": "C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Scripts\\CameraTracking.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CameraTracking.cs",
-              "ToolTip": "C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Scripts\\CameraTracking.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CameraTracking.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAQwCMAAABQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T11:38:55.636Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PlayerMove.cs",
-              "DocumentMoniker": "C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Scripts\\PlayerMove.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMove.cs",
-              "ToolTip": "C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Scripts\\PlayerMove.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerMove.cs",
-              "ViewState": "AQIAAEQAAAAAAAAAAAAwwFcAAABfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T11:29:46.111Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "GrenadeScript.cs",
-              "DocumentMoniker": "C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\GrenadeScript.cs",
-              "RelativeDocumentMoniker": "Assets\\GrenadeScript.cs",
-              "ToolTip": "C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\GrenadeScript.cs",
-              "RelativeToolTip": "Assets\\GrenadeScript.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T10:56:10.164Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ExplosionScript.cs",
-              "DocumentMoniker": "C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\ExplosionScript.cs",
-              "RelativeDocumentMoniker": "Assets\\ExplosionScript.cs",
-              "ToolTip": "C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\ExplosionScript.cs",
-              "RelativeToolTip": "Assets\\ExplosionScript.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T10:55:59.187Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AbilityHolder.cs",
-              "DocumentMoniker": "C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Scripts\\AbilityHolder.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\AbilityHolder.cs",
-              "ToolTip": "C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Scripts\\AbilityHolder.cs",
-              "RelativeToolTip": "Assets\\Scripts\\AbilityHolder.cs",
-              "ViewState": "AQIAAC8AAAAAAAAAAAAQwDYAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T09:33:19.343Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AbilityItem.cs",
-              "DocumentMoniker": "C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Scripts\\AbilityItem.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\AbilityItem.cs",
-              "ToolTip": "C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Scripts\\AbilityItem.cs",
-              "RelativeToolTip": "Assets\\Scripts\\AbilityItem.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABTAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T09:33:11.91Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Dumm.cs",
-              "DocumentMoniker": "C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Scripts\\Dumm.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Dumm.cs",
-              "ToolTip": "C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Scripts\\Dumm.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Dumm.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T09:30:32.032Z"
+              "WhenOpened": "2025-03-28T11:28:42.985Z",
+              "EditorCaption": ""
             }
           ]
         }

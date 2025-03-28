@@ -1,0 +1,472 @@
+fileFormatVersion: 2
+guid: ce3df25f9c1707848bbc2d14efef061e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BigMeleeDeath_0
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 2587
+        width: 864
+        height: 1131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c512e8782667bca4f8690adcf69fe379
+      internalID: 513003850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigMeleeDeath_1
+      rect:
+        serializedVersion: 2
+        x: 2621
+        y: 2573
+        width: 858
+        height: 1131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cf7fcd3c7029574587e452c22bccaee
+      internalID: -623799494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigMeleeDeath_2
+      rect:
+        serializedVersion: 2
+        x: 4680
+        y: 2573
+        width: 851
+        height: 1131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fc89a071bf7a4d43858d6cd2ac04ea2
+      internalID: 235342021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigMeleeDeath_3
+      rect:
+        serializedVersion: 2
+        x: 6746
+        y: 2566
+        width: 872
+        height: 1124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13ef532168feb5e408a46d2a06115d1e
+      internalID: -397850925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigMeleeDeath_6
+      rect:
+        serializedVersion: 2
+        x: 8847
+        y: 2537
+        width: 907
+        height: 1055
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcabea25d692c4d43b40b9fdd46b0904
+      internalID: 548936248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigMeleeDeath_7
+      rect:
+        serializedVersion: 2
+        x: 10906
+        y: 2537
+        width: 900
+        height: 1055
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 965e113351b12a645aede9ba4b460487
+      internalID: 1343253269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigMeleeDeath_8
+      rect:
+        serializedVersion: 2
+        x: 12832
+        y: 2537
+        width: 970
+        height: 999
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7687f67dcbe84ac4f83c43f0baa211ec
+      internalID: 1204884719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigMeleeDeath_26
+      rect:
+        serializedVersion: 2
+        x: 6535
+        y: 485
+        width: 1350
+        height: 1419
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efb5c9da9fa92524380dad1db8197542
+      internalID: 1279250651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigMeleeDeath_27
+      rect:
+        serializedVersion: 2
+        x: 8524
+        y: 513
+        width: 1476
+        height: 1408
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0ea2195d5582b54fbe5123a3d158fdb
+      internalID: -81382481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigMeleeDeath_29
+      rect:
+        serializedVersion: 2
+        x: 10534
+        y: 485
+        width: 1532
+        height: 1419
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b214ad2711e4c8347accafca2a365626
+      internalID: 339924783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigMeleeDeath_31
+      rect:
+        serializedVersion: 2
+        x: 12545
+        y: 485
+        width: 1503
+        height: 1443
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab842c30546607b42a62b48763443d89
+      internalID: -1967663517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigMeleeDeath_34
+      rect:
+        serializedVersion: 2
+        x: 4547
+        y: 513
+        width: 1047
+        height: 1408
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 147470c500e58b14c9ccd73980135a7c
+      internalID: 2109411961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigMeleeDeath_36
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 471
+        width: 1012
+        height: 1408
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7c482a6350bbeb40806852aaf30fc80
+      internalID: 486573018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigMeleeDeath_42
+      rect:
+        serializedVersion: 2
+        x: 2401
+        y: 429
+        width: 1225
+        height: 1458
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb8a193f13907e7429ce5fa1f1678d40
+      internalID: -647620464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d02c601a87a0f7245b8addb340d4e383
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BigMeleeDeath_0: 513003850
+      BigMeleeDeath_1: -623799494
+      BigMeleeDeath_10: 2119801900
+      BigMeleeDeath_11: -1975829478
+      BigMeleeDeath_12: -1869566250
+      BigMeleeDeath_13: -2008124482
+      BigMeleeDeath_14: -733393507
+      BigMeleeDeath_15: 1557574113
+      BigMeleeDeath_16: 348599635
+      BigMeleeDeath_17: -1932361595
+      BigMeleeDeath_18: 649257193
+      BigMeleeDeath_19: 1898274152
+      BigMeleeDeath_2: 235342021
+      BigMeleeDeath_20: 222751739
+      BigMeleeDeath_21: 1968603445
+      BigMeleeDeath_22: 1982172554
+      BigMeleeDeath_23: -1521347285
+      BigMeleeDeath_24: 934388626
+      BigMeleeDeath_25: 1164905457
+      BigMeleeDeath_26: 1279250651
+      BigMeleeDeath_27: -81382481
+      BigMeleeDeath_28: -1073668240
+      BigMeleeDeath_29: 339924783
+      BigMeleeDeath_3: -397850925
+      BigMeleeDeath_30: -394749965
+      BigMeleeDeath_31: -1967663517
+      BigMeleeDeath_32: -111411145
+      BigMeleeDeath_33: -1945696917
+      BigMeleeDeath_34: 2109411961
+      BigMeleeDeath_35: 1646611074
+      BigMeleeDeath_36: 486573018
+      BigMeleeDeath_37: 2051982311
+      BigMeleeDeath_38: -592403623
+      BigMeleeDeath_39: -1891879640
+      BigMeleeDeath_4: -1775426322
+      BigMeleeDeath_40: -58628382
+      BigMeleeDeath_41: -2112037364
+      BigMeleeDeath_42: -647620464
+      BigMeleeDeath_43: 963678829
+      BigMeleeDeath_44: -623369165
+      BigMeleeDeath_45: -590454046
+      BigMeleeDeath_46: -1437354737
+      BigMeleeDeath_5: 1229196974
+      BigMeleeDeath_6: 548936248
+      BigMeleeDeath_7: 1343253269
+      BigMeleeDeath_8: 1204884719
+      BigMeleeDeath_9: -293611468
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

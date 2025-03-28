@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{94BE6FAC-2D9D-A6D9-BB40-19F1214CDB16}</ProjectGuid>
+    <ProjectGuid>{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -64,22 +64,24 @@
     <Compile Include="Assets\Scripts\AbilityCircle.cs" />
     <Compile Include="Assets\Scripts\StickyNade.cs" />
     <Compile Include="Assets\Scripts\DoorScript.cs" />
-    <Compile Include="Assets\Scripts\MeleeGrunt.cs" />
     <Compile Include="Assets\Scripts\Resta.cs" />
     <Compile Include="Assets\Scripts\PlayerMove.cs" />
     <Compile Include="Assets\Scripts\BulletTestScript.cs" />
-    <Compile Include="Assets\Scripts\GrenadeEnemy.cs" />
     <Compile Include="Assets\Scripts\MolotovScript.cs" />
-    <Compile Include="Assets\Scripts\Dumm.cs" />
+    <Compile Include="Assets\Scripts\Enemies\BigMelee.cs" />
     <Compile Include="Assets\Scripts\AbilityItem.cs" />
     <Compile Include="Assets\Scripts\GrenadeScript.cs" />
+    <Compile Include="Assets\Scripts\Enemies\MeleeGrunt.cs" />
+    <Compile Include="Assets\Scripts\Enemies\GrenadeEnemy.cs" />
     <Compile Include="Assets\Scripts\CameraTracking.cs" />
     <Compile Include="Assets\Scripts\ExplosionScript.cs" />
-    <Compile Include="Assets\Scripts\RangeGrunt.cs" />
-    <Compile Include="Assets\OpeningDoor.cs" />
+    <Compile Include="Assets\Scripts\Enemies\RangeGrunt.cs" />
+    <Compile Include="Assets\Scripts\Enemies\Dumm.cs" />
     <Compile Include="Assets\Scripts\AbilityHolder.cs" />
+    <Compile Include="Assets\Scripts\OpeningDoor.cs" />
     <Compile Include="Assets\Scripts\Billboarder.cs" />
     <Compile Include="Assets\Scripts\MolotovExplosion.cs" />
+    <Compile Include="Assets\Scripts\DeathPit.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
