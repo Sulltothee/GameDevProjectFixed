@@ -57,7 +57,7 @@ public class RangeGrunt : MonoBehaviour
             Invoke("ShootGun", 0.5f);
         }
 
-        animator.SetInteger("StateInt", (int)currentState);
+        if (animator != null) { animator.SetInteger("StateInt", (int)currentState); }
     }
 
     public void TakeDamage(float damage)

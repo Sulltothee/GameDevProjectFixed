@@ -12,6 +12,8 @@ TagManager:
   - Melee grunt
   - Molotov
   - StickyNade
+  - MeleeBig
+  - GrenadeLauncher
   layers:
   - Default
   - TransparentFX

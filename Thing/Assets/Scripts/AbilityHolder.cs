@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
@@ -66,7 +67,8 @@ public class AbilityHolder : MonoBehaviour
         AbilityTypes[4] = new RayCastGun(AbilityType.Names.SniperRifle, Icons[4]); 
         AbilityTypes[5] = new RayCastGun(AbilityType.Names.AutoRifle, Icons[5]); 
         AbilityTypes[6] = new RailGun(Icons[6]); 
-        AbilityTypes[7] = new ProjectileWeapon(AbilityType.Names.GrenadeLauncher, Projectiles[4], Icons[7]); 
+        AbilityTypes[7] = new ProjectileWeapon(AbilityType.Names.GrenadeLauncher, Projectiles[4], Icons[7]);
+        AbilityTypes[8] = new BigPunch(Icons[8]);
 
         //Instantializing the cooldowns
         coolDowns = new float[4]; 
@@ -174,7 +176,7 @@ public abstract class AbilityType
     public GameObject Player;
 
     //The names of every ability type/ the name of the instance (default empty)
-    public enum Names { Empty, Pistol, Grenade, StickyNade, Molotov, SniperRifle, AutoRifle, RailGun, GrenadeLauncher }
+    public enum Names { Empty, Pistol, Grenade, StickyNade, Molotov, SniperRifle, AutoRifle, RailGun, GrenadeLauncher , BigPunch}
     public Names name = Names.Empty;
 
     //How many times an instance of this ability can be used before it vanished (default 0)
@@ -394,6 +396,77 @@ public class RailGun : RaycastAbility
             HitIndex++; 
         }
         Player.GetComponent<AbilityHolder>().CurrentCharge = 0;
+    }
+}
+
+public class BigPunch : AbilityType
+{
+    public override void Activate()
+    {
+        //Flinging the player forward
+        Player.GetComponent<Rigidbody>().AddForce(GameObject.FindWithTag("MainCamera").transform.forward.normalized * 500);
+
+        RaycastHit[] Hits = Physics.RaycastAll(Player.transform.position, Camera.main.transform.forward, 2, LayerMask.GetMask("Terrain", "Enemies"));
+
+        bool HasHitTerrain = false;
+        int HitIndex = 0;
+        while (!HasHitTerrain && HitIndex < Hits.Length)
+        {
+            if (Hits[HitIndex].collider.gameObject.tag == "Terrain")
+            {
+                HasHitTerrain = true;
+            }
+            else
+            {
+                Hits[HitIndex].collider.gameObject.SendMessage("TakeDamage", 10, SendMessageOptions.DontRequireReceiver);
+            }
+
+            HitIndex++;
+        }
+
+        Task.Delay(10000).ContinueWith(t => SecondHit());
+    }
+
+    void SecondHit()
+    {
+        Debug.Log("A");
+
+        RaycastHit[] Hits = Physics.RaycastAll(Player.transform.position, Camera.main.transform.forward, 2, LayerMask.GetMask("Terrain", "Enemies"));
+
+        Debug.Log(Hits.Length);
+
+        bool HasHitTerrain = false;
+        int HitIndex = 0;
+        while (!HasHitTerrain && HitIndex < Hits.Length)
+        {
+            Debug.Log("B");
+
+            if (Hits[HitIndex].collider.gameObject.tag == "Terrain")
+            {
+                HasHitTerrain = true;
+            }
+            else
+            {
+                Hits[HitIndex].collider.gameObject.SendMessage("TakeDamage", 10, SendMessageOptions.DontRequireReceiver);
+            }
+
+            HitIndex++;
+        }
+    }
+
+    public BigPunch(Sprite icon)
+    {
+        Icon = icon;
+
+        Player = GameObject.FindWithTag("Player");
+
+        name = Names.BigPunch;
+
+        Uses = 1;
+
+        Cooldown = 0;
+
+        ActivationType = ActivationTypes.Press;
     }
 }
 

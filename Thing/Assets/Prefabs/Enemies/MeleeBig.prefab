@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 4733052081350093965}
   m_Layer: 0
   m_Name: MeleeBig
-  m_TagString: Melee grunt
+  m_TagString: MeleeBig
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -311,5 +311,5 @@ MonoBehaviour:
   Damage: 1
   AttackCooldown: 3
   PunchTime: 1.7
-  Name: 0
-  AbilityDrop: {fileID: 0}
+  Name: 4
+  AbilityDrop: {fileID: 7271534160636922282, guid: 5b2dd83dddfe49b4ea54654802bddb6b, type: 3}
