@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -45,6 +46,9 @@ public class PlayerMovement : MonoBehaviour
     Vector3 WallJumpAwayFrom;
     bool Onwall;
 
+    //The player's collider
+    CapsuleCollider collide;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -53,6 +57,9 @@ public class PlayerMovement : MonoBehaviour
 
         //Getting the object that stores the orientation of movement for the better
         Orientation = transform.GetChild(0);
+
+        //fetching the collider component
+        collide = GetComponent<CapsuleCollider>();
 
         //Setting defaults
         DefaultMoveSpeed = MovementSpeed;
@@ -125,6 +132,17 @@ public class PlayerMovement : MonoBehaviour
         {
             State = states.Walking;
         }
+
+        if (State == states.Sliding && collide.height == 2)
+        {
+            collide.height = 1;
+            transform.position += Vector3.down * 0.5f;
+        }
+        else if (State != states.Sliding && collide.height == 1) 
+        {
+            transform.position += Vector3.up * 0.5f;
+            collide.height = 2; 
+        }
     }
 
     private void FixedUpdate()
@@ -171,10 +189,8 @@ public class PlayerMovement : MonoBehaviour
         Vector3 moveDirection = Orientation.forward * Input.GetAxisRaw("Vertical") + Orientation.right * Input.GetAxisRaw("Horizontal");
 
         //if the player is moving too slow this speeds them up more
-        if (rb.linearVelocity.x < 0 == moveDirection.x < 0 && rb.linearVelocity.z < 0 == moveDirection.z < 0 && rb.linearVelocity.magnitude < 2f)
-        {
-            rb.AddForce(MovementSpeed * moveDirection.normalized * Time.deltaTime * 10f * Convert.ToInt16(State != states.Sliding));
-        }
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D)) { rb.linearVelocity = Vector3.Scale(rb.linearVelocity, new Vector3(0.5f, 1, 0.5f))  ; rb.AddForce(moveDirection.normalized * 200); }
+      
         else { rb.AddForce(MovementSpeed * moveDirection.normalized * Time.deltaTime * Convert.ToInt16(State != states.Sliding)); }
     }
 

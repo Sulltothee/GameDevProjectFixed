@@ -14,6 +14,8 @@ TagManager:
   - StickyNade
   - MeleeBig
   - GrenadeLauncher
+  - SniperShot
+  - SniperGuy
   layers:
   - Default
   - TransparentFX

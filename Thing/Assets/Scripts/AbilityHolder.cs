@@ -401,10 +401,12 @@ public class RailGun : RaycastAbility
 
 public class BigPunch : AbilityType
 {
-    public override void Activate()
+    public override async void Activate()
     {
+        Rigidbody rb = Player.GetComponent<Rigidbody>();
+
         //Flinging the player forward
-        Player.GetComponent<Rigidbody>().AddForce(GameObject.FindWithTag("MainCamera").transform.forward.normalized * 500);
+        rb.AddForce(Player.transform.GetChild(0).forward * 500);
 
         RaycastHit[] Hits = Physics.RaycastAll(Player.transform.position, Camera.main.transform.forward, 2, LayerMask.GetMask("Terrain", "Enemies"));
 
@@ -424,23 +426,15 @@ public class BigPunch : AbilityType
             HitIndex++;
         }
 
-        Task.Delay(10000).ContinueWith(t => SecondHit());
-    }
+        await Task.Delay(200);
 
-    void SecondHit()
-    {
-        Debug.Log("A");
+        //Second hit
+        Hits = Physics.RaycastAll(Player.transform.position, Camera.main.transform.forward, 2, LayerMask.GetMask("Terrain", "Enemies"));
 
-        RaycastHit[] Hits = Physics.RaycastAll(Player.transform.position, Camera.main.transform.forward, 2, LayerMask.GetMask("Terrain", "Enemies"));
-
-        Debug.Log(Hits.Length);
-
-        bool HasHitTerrain = false;
-        int HitIndex = 0;
+        HasHitTerrain = false;
+        HitIndex = 0;
         while (!HasHitTerrain && HitIndex < Hits.Length)
         {
-            Debug.Log("B");
-
             if (Hits[HitIndex].collider.gameObject.tag == "Terrain")
             {
                 HasHitTerrain = true;
@@ -452,6 +446,10 @@ public class BigPunch : AbilityType
 
             HitIndex++;
         }
+
+        //flinging the player up
+        if (rb.linearVelocity.y < 0) { rb.linearVelocity = Vector3.Scale(rb.linearVelocity, new Vector3(1, 0.3f, 1)); }
+        rb.AddForce(Vector3.up * 350);
     }
 
     public BigPunch(Sprite icon)

@@ -4,18 +4,24 @@ using UnityEngine;
 
 public class Dumm : MonoBehaviour
 {
+    //The current hp
     public float HP;
+
+    //the type of ability that will be dropped/ the ability item prefab
     public AbilityType.Names Name;
     public GameObject AbilityDrop;
 
+    //how long this object will burn for/ how much damage it will take for each second it burns
     float Burntime;
     public float BurnDmgPerSec;
 
+    //Called by other scripts to deal this damage
     public void TakeDamage(float damage)
     {
         HP -= damage;
     }
 
+    //called by other objects to "ignite" this object
     public void ApplyBurn(float Time)
     {
         Burntime += Time;
@@ -23,6 +29,7 @@ public class Dumm : MonoBehaviour
 
     private void FixedUpdate()
     {
+        //dying
         if(HP <= 0) 
         {
             GameObject[] AllActiveDrops = GameObject.FindGameObjectsWithTag(AbilityDrop.tag);
@@ -49,6 +56,7 @@ public class Dumm : MonoBehaviour
             gameObject.SetActive(false);
         }
 
+        //applying burn damage
         if (Burntime > 0)
         {
             HP -= BurnDmgPerSec * 0.02f;

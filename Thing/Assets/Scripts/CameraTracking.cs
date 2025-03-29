@@ -33,7 +33,8 @@ public class CameraTracking : MonoBehaviour
         float mouseX = Input.GetAxisRaw("Mouse X") * Time.deltaTime * sensX;
         float mouseY = Input.GetAxisRaw("Mouse Y") * Time.deltaTime * sensY;
 
-        Camera.transform.position = transform.position + new Vector3(0,-0.75f * Convert.ToInt16(gameObject.GetComponent<PlayerMovement>().State == PlayerMovement.states.Sliding), 0);
+        //Camera.transform.position = transform.position + new Vector3(0,-0.75f * Convert.ToInt16(gameObject.GetComponent<PlayerMovement>().State == PlayerMovement.states.Sliding), 0);
+        Camera.transform.position = transform.position;
 
         yRotation += mouseX;
         xRotation -= mouseY;

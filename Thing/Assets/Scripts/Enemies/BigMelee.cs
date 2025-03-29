@@ -31,31 +31,34 @@ public class BigMelee : MonoBehaviour
     public float Range = 6;
     public float Damage;
 
-    //How often it attacks
+    //How often it attacks/ how long until the next attack
     public float AttackCooldown = 3;
     float AttackCooldownCurrent = 0;
 
     //How long it takes for it to attack
     public float PunchTime;
 
-    //Stuff to do with the dropped ability
+    //the name of the dropped ability/ the ability item prefab
     public AbilityType.Names Name;
     public GameObject AbilityDrop;
 
     private void Awake()
     {
+        //Setting the hp to the maximum hp
         HP = MaxHP;
+
+        //fetches the navmeshagent and animator components 
         Agent = GetComponent<NavMeshAgent>();
-        player = GameObject.FindWithTag("Player");
         animator = GetComponentInChildren<Animator>();
 
-        currentState = states.idle;
+        //Fetching a reference to the player object
+        player = GameObject.FindWithTag("Player");
     }
 
     // fixed update is called every 0.02s
     private void FixedUpdate()
     {
-        //Enabling/ disabling its behaviors if it can't see the player
+        //Enabling/ disabling its behaviors if it can't see the player or if it's dying
         if(currentState != states.death && currentState!= states.Punch && !Physics.Raycast(transform.position, player.transform.position - transform.position, SeeDistance, -player.layer )) {currentState = states.idle;} 
         else if (currentState != states.death && currentState != states.Punch) { currentState = states.run;}
         if (Agent != null && Agent.enabled && currentState == states.run)
@@ -73,24 +76,35 @@ public class BigMelee : MonoBehaviour
         //Attacking
         if(AttackCooldownCurrent <= 0 && (player.transform.position - transform.position).magnitude <= Range) 
         {
-            AttackCooldownCurrent = AttackCooldown;                                                                                                                                                                                                                                                                  
+            //restarting the cooldown
+            AttackCooldownCurrent = AttackCooldown;
+
+            //changing the state
             currentState = states.Punch;
+
+            //finishing the punch after the animation has played some and the player has had a chance to run
             Invoke("FinishPunch", PunchTime);
         }
+        //decreasing the attack cooldown if it hasn't passed
         else if (AttackCooldownCurrent > 0) { AttackCooldownCurrent -= 0.02f; }
 
+        //Updating the animations in reference to the current state
         animator.SetInteger("StateInt", (int)currentState);
     }
 
+    //This message is sent by other objects to deal this damage (mostly)
     public void TakeDamage(float damage)
     {
+        //Reducing the enemie's health
         HP -= damage;
 
+        //If the enemy has died
         if (HP <= 0)
         {
             currentState = states.death;
-            Agent.enabled = true;
+            Agent.enabled = false;
 
+            //making the item drop
             if (Name != AbilityType.Names.Empty)
             {
                 GameObject[] AllActiveDrops = GameObject.FindGameObjectsWithTag(AbilityDrop.tag);
@@ -116,17 +130,21 @@ public class BigMelee : MonoBehaviour
                 }
             }
 
+            //Disabling the object fully after the animation has had time to play
             Invoke("finishDying", 2);
         }
     }
 
+    //Called by other scripts to "ignite" this object
     public void ApplyBurn(float Time)
     {
         Burntime += Time;
     }
 
+    //called to reenable the pathfinding and deal damage to the player at the end of a punch
     public void FinishPunch()
     {
+        //Deals damage to the player if they're still in range
         if ((player.transform.position - transform.position).magnitude <= Range)
         {
             player.SendMessage("TakeDamage", Damage);
@@ -134,6 +152,7 @@ public class BigMelee : MonoBehaviour
         currentState = states.run;
     }
 
+    //Disables the object when it dies;
     void finishDying()
     {
         gameObject.SetActive(false);
