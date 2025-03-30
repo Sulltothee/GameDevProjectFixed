@@ -82,6 +82,7 @@
     <Compile Include="Assets\Scripts\Enemies\RangeGrunt.cs" />
     <Compile Include="Assets\Scripts\Enemies\RailGunGuy.cs" />
     <Compile Include="Assets\Scripts\Enemies\Dumm.cs" />
+    <Compile Include="Assets\Scripts\Enemies\EnemyBase.cs" />
     <Compile Include="Assets\Scripts\AbilityHolder.cs" />
     <Compile Include="Assets\Scripts\OpeningDoor.cs" />
     <Compile Include="Assets\Scripts\Billboarder.cs" />

@@ -416,6 +416,7 @@
 "Assets/Scripts/Enemies/Drone/RailgunDrone.cs"
 "Assets/Scripts/Enemies/Drone/SniperDrone.cs"
 "Assets/Scripts/Enemies/Dumm.cs"
+"Assets/Scripts/Enemies/EnemyBase.cs"
 "Assets/Scripts/Enemies/MeleeGrunt.cs"
 "Assets/Scripts/Enemies/RailGunGuy.cs"
 "Assets/Scripts/Enemies/RangeGrunt.cs"
