@@ -50,16 +50,28 @@ public class SniperGuy : MonoBehaviour
     //Runs whenever the script is loaded
     private void Awake()
     {
+        FreshStart();
+    }
+    private void OnEnable()
+    {
+        FreshStart();
+    }
+
+    void FreshStart()
+    {
         //Sets the hp to the maximum hp
         HP = MaxHP;
 
         //fetches the navmeshagent, animator and line renderer components
         Agent = GetComponent<NavMeshAgent>();
-        animator = GetComponentInChildren<Animator>();    
+        animator = GetComponentInChildren<Animator>();
         lineRenderer = GetComponent<LineRenderer>();
 
         //fetches the player object
         player = GameObject.FindWithTag("Player");
+
+        //Reenabling the laser
+        lineRenderer.enabled = true;
     }
 
     private void FixedUpdate()
@@ -109,8 +121,11 @@ public class SniperGuy : MonoBehaviour
         if (allHits.Length > 0) { point2 = allHits[0].point; }
         else { point2 = transform.position + ((LastKnownPlayerPosition - transform.position).normalized * Range); }
 
-        //Setting the start and end points of the lasert
-        lineRenderer.SetPositions(new Vector3[] { transform.position, point2 });
+        //Setting the start and end points of the laser
+        if (lineRenderer != null && lineRenderer.enabled)
+        {
+            lineRenderer.SetPositions(new Vector3[] { transform.position, point2 });
+        }
     }
 
     //This message is sent by other objects (mostly)
@@ -122,7 +137,11 @@ public class SniperGuy : MonoBehaviour
         //If the enemy has died
         if (HP <= 0) 
         {
+            //Setting the state
             currentState = states.death;
+
+            //Disabling the laser and pathfinding
+            lineRenderer.enabled = false;
             Agent.enabled = false;
 
             //making the item drop

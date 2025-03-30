@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\rando\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|c:\\users\\rando\\documents\\github\\gamedevprojectfixed\\thing\\assets\\scripts\\playermove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|c:\\users\\rando\\documents\\github\\gamedevprojectfixed\\thing\\assets\\dronescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|solutionrelative:assets\\dronescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|c:\\users\\rando\\documents\\github\\gamedevprojectfixed\\thing\\assets\\scripts\\grenadescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\grenadescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|c:\\users\\rando\\documents\\github\\gamedevprojectfixed\\thing\\assets\\railgundrone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|solutionrelative:assets\\railgundrone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|c:\\users\\rando\\documents\\github\\gamedevprojectfixed\\thing\\assets\\scripts\\molotovscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\molotovscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|c:\\users\\rando\\documents\\github\\gamedevprojectfixed\\thing\\assets\\projectiledrone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|solutionrelative:assets\\projectiledrone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|c:\\users\\rando\\documents\\github\\gamedevprojectfixed\\thing\\assets\\scripts\\stickynade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\stickynade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|c:\\users\\rando\\documents\\github\\gamedevprojectfixed\\thing\\assets\\scripts\\abilityholder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\abilityholder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|c:\\users\\rando\\documents\\github\\gamedevprojectfixed\\thing\\assets\\sniperdrone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|solutionrelative:assets\\sniperdrone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,71 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PlayerMove.cs",
-              "DocumentMoniker": "C:\\Users\\rando\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Scripts\\PlayerMove.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMove.cs",
-              "ToolTip": "C:\\Users\\rando\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Scripts\\PlayerMove.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerMove.cs",
-              "ViewState": "AgIAAH0AAAAAAAAAAAAgwIUAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T00:05:04.527Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MolotovScript.cs",
-              "DocumentMoniker": "C:\\Users\\rando\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Scripts\\MolotovScript.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\MolotovScript.cs",
-              "ToolTip": "C:\\Users\\rando\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Scripts\\MolotovScript.cs",
-              "RelativeToolTip": "Assets\\Scripts\\MolotovScript.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAQwB8AAAA0AAAAAAAAAA==",
+              "Title": "ProjectileDrone.cs",
+              "DocumentMoniker": "C:\\Users\\rando\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\ProjectileDrone.cs",
+              "RelativeDocumentMoniker": "Assets\\ProjectileDrone.cs",
+              "ToolTip": "C:\\Users\\rando\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\ProjectileDrone.cs",
+              "RelativeToolTip": "Assets\\ProjectileDrone.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAYwEoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T00:03:37.809Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GrenadeScript.cs",
-              "DocumentMoniker": "C:\\Users\\rando\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Scripts\\GrenadeScript.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GrenadeScript.cs",
-              "ToolTip": "C:\\Users\\rando\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Scripts\\GrenadeScript.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GrenadeScript.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAgwC4AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T00:03:32.439Z",
+              "WhenOpened": "2025-03-30T14:24:50.257Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "StickyNade.cs",
-              "DocumentMoniker": "C:\\Users\\rando\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Scripts\\StickyNade.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\StickyNade.cs",
-              "ToolTip": "C:\\Users\\rando\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Scripts\\StickyNade.cs",
-              "RelativeToolTip": "Assets\\Scripts\\StickyNade.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAYwD0AAAAFAAAAAAAAAA==",
+              "Title": "SniperDrone.cs",
+              "DocumentMoniker": "C:\\Users\\rando\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\SniperDrone.cs",
+              "RelativeDocumentMoniker": "Assets\\SniperDrone.cs",
+              "ToolTip": "C:\\Users\\rando\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\SniperDrone.cs",
+              "RelativeToolTip": "Assets\\SniperDrone.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAiwEEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T23:49:49.799Z",
+              "WhenOpened": "2025-03-30T14:03:33.423Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AbilityHolder.cs",
-              "DocumentMoniker": "C:\\Users\\rando\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Scripts\\AbilityHolder.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\AbilityHolder.cs",
-              "ToolTip": "C:\\Users\\rando\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Scripts\\AbilityHolder.cs",
-              "RelativeToolTip": "Assets\\Scripts\\AbilityHolder.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgCAAAlAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "RailgunDrone.cs",
+              "DocumentMoniker": "C:\\Users\\rando\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\RailgunDrone.cs",
+              "RelativeDocumentMoniker": "Assets\\RailgunDrone.cs",
+              "ToolTip": "C:\\Users\\rando\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\RailgunDrone.cs",
+              "RelativeToolTip": "Assets\\RailgunDrone.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAYwD4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T21:26:43.048Z",
+              "WhenOpened": "2025-03-30T13:54:48.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DroneScript.cs",
+              "DocumentMoniker": "C:\\Users\\rando\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\DroneScript.cs",
+              "RelativeDocumentMoniker": "Assets\\DroneScript.cs",
+              "ToolTip": "C:\\Users\\rando\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\DroneScript.cs",
+              "RelativeToolTip": "Assets\\DroneScript.cs",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAAAMMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T10:37:59.566Z",
               "EditorCaption": ""
             }
           ]

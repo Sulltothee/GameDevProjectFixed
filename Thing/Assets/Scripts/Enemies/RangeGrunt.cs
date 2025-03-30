@@ -41,6 +41,14 @@ public class RangeGrunt : MonoBehaviour
 
     private void Awake()
     {
+        FreshStart();
+    }
+    private void OnEnable()
+    {
+        FreshStart();
+    }
+    void FreshStart()
+    {
         //Setting the hp to the maximum hp
         HP = MaxHP;
 

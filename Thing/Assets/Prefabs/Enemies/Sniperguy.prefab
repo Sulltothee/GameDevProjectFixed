@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 6221280176140707102}
   m_Layer: 0
   m_Name: Sniperguy
-  m_TagString: Melee grunt
+  m_TagString: SniperGuy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

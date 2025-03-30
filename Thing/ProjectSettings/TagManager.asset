@@ -16,6 +16,11 @@ TagManager:
   - GrenadeLauncher
   - SniperShot
   - SniperGuy
+  - RailGunGuy
+  - Drone
+  - ProjectileDrone
+  - SniperDrone
+  - RailgunDrone
   layers:
   - Default
   - TransparentFX

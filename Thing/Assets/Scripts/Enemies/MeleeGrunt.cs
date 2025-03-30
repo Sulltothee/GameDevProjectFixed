@@ -33,6 +33,14 @@ public class MeleeGrunt : MonoBehaviour
 
     private void Awake()
     {
+        FreshStart();
+    }
+    private void OnEnable()
+    {
+        FreshStart();
+    }
+    void FreshStart()
+    {
         //Setting the hp to the maximum hp
         HP = MaxHP;
 
@@ -42,7 +50,6 @@ public class MeleeGrunt : MonoBehaviour
         //Fetching a reference to the player object
         player = GameObject.FindWithTag("Player");
     }
-
     private void FixedUpdate()
     {
         //creating a path to the player

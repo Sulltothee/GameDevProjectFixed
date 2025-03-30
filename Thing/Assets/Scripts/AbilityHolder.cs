@@ -54,6 +54,9 @@ public class AbilityHolder : MonoBehaviour
     public float PunchCooldown = 1;
     float PunchCooldownCurrent = 0;
 
+    //The initial abilities the player will have
+    public AbilityType.Names[] InitialInventory;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -92,9 +95,10 @@ public class AbilityHolder : MonoBehaviour
         coolDowns = new float[4]; 
 
         //Test Stuff, Giving the player example abilities
-        CurrentAbilities[0] = new AbilityInstance(AbilityTypes[0]);
-        CurrentAbilities[1] = new AbilityInstance(AbilityTypes[8]);
-        CurrentAbilities[2] = new AbilityInstance(AbilityTypes[3]);
+        CurrentAbilities[0] = new AbilityInstance(AbilityTypes[(int)InitialInventory[0] - 1]);
+        CurrentAbilities[1] = new AbilityInstance(AbilityTypes[(int)InitialInventory[1] - 1]);
+        CurrentAbilities[2] = new AbilityInstance(AbilityTypes[(int)InitialInventory[2] - 1]);
+        CurrentAbilities[3] = new AbilityInstance(AbilityTypes[(int)InitialInventory[3] - 1]);
     }
 
     // Update is called once per frame
@@ -245,7 +249,8 @@ public class ProjectileWeapon : AbilityType
         //if a deactivated shot isn't found a new one is made
         if (!hasFoundBullet)
         {
-            GameObject.Instantiate(Projectile, Camera.main.transform.position, Camera.main.transform.rotation);
+            bullet = GameObject.Instantiate(Projectile, Camera.main.transform.position, Camera.main.transform.rotation);
+            if (bullet.GetComponentInChildren<Rigidbody>().useGravity) {bullet.GetComponentInChildren<Rigidbody>().linearVelocity += Player.GetComponent<Rigidbody>().linearVelocity;}
         }
         //if theres a deactivated shot it is reset and appears to have just been created
         else
@@ -256,6 +261,7 @@ public class ProjectileWeapon : AbilityType
             bullet.transform.GetChild(0).localPosition = Vector3.zero;
             bullet.transform.GetChild(0).localRotation = Projectile.transform.GetChild(0).localRotation;
             bullet.transform.GetChild(0).gameObject.GetComponent<Collider>().excludeLayers = LayerMask.GetMask("Items", "Player");
+            if (bullet.GetComponentInChildren<Rigidbody>().useGravity) { bullet.GetComponentInChildren<Rigidbody>().linearVelocity += Player.GetComponent<Rigidbody>().linearVelocity; }
         }
     }
 

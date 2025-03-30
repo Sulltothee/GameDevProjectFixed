@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\AbilityCircle.cs" />
     <Compile Include="Assets\Scripts\Enemies\SniperGuy.cs" />
+    <Compile Include="Assets\DroneScript.cs" />
     <Compile Include="Assets\Scripts\StickyNade.cs" />
     <Compile Include="Assets\Scripts\DoorScript.cs" />
     <Compile Include="Assets\Scripts\Resta.cs" />
@@ -75,7 +76,11 @@
     <Compile Include="Assets\Scripts\Enemies\MeleeGrunt.cs" />
     <Compile Include="Assets\Scripts\CameraTracking.cs" />
     <Compile Include="Assets\Scripts\ExplosionScript.cs" />
+    <Compile Include="Assets\SniperDrone.cs" />
+    <Compile Include="Assets\ProjectileDrone.cs" />
     <Compile Include="Assets\Scripts\Enemies\RangeGrunt.cs" />
+    <Compile Include="Assets\Scripts\Enemies\RailGunGuy.cs" />
+    <Compile Include="Assets\RailgunDrone.cs" />
     <Compile Include="Assets\Scripts\Enemies\Dumm.cs" />
     <Compile Include="Assets\Scripts\AbilityHolder.cs" />
     <Compile Include="Assets\Scripts\OpeningDoor.cs" />

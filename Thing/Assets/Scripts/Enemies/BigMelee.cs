@@ -44,6 +44,14 @@ public class BigMelee : MonoBehaviour
 
     private void Awake()
     {
+        FreshStart();
+    }
+    private void OnEnable()
+    {
+        FreshStart();
+    }
+    void FreshStart()
+    {
         //Setting the hp to the maximum hp
         HP = MaxHP;
 
@@ -54,6 +62,8 @@ public class BigMelee : MonoBehaviour
         //Fetching a reference to the player object
         player = GameObject.FindWithTag("Player");
     }
+
+
 
     // fixed update is called every 0.02s
     private void FixedUpdate()
