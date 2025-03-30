@@ -21,6 +21,7 @@ TagManager:
   - ProjectileDrone
   - SniperDrone
   - RailgunDrone
+  - Charger
   layers:
   - Default
   - TransparentFX

@@ -401,9 +401,6 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.43f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.43f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.43f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
-"Assets/DroneScript.cs"
-"Assets/ProjectileDrone.cs"
-"Assets/RailgunDrone.cs"
 "Assets/Scripts/AbilityCircle.cs"
 "Assets/Scripts/AbilityHolder.cs"
 "Assets/Scripts/AbilityItem.cs"
@@ -413,6 +410,11 @@
 "Assets/Scripts/DeathPit.cs"
 "Assets/Scripts/DoorScript.cs"
 "Assets/Scripts/Enemies/BigMelee.cs"
+"Assets/Scripts/Enemies/ChargerScript.cs"
+"Assets/Scripts/Enemies/Drone/DroneScript.cs"
+"Assets/Scripts/Enemies/Drone/ProjectileDrone.cs"
+"Assets/Scripts/Enemies/Drone/RailgunDrone.cs"
+"Assets/Scripts/Enemies/Drone/SniperDrone.cs"
 "Assets/Scripts/Enemies/Dumm.cs"
 "Assets/Scripts/Enemies/MeleeGrunt.cs"
 "Assets/Scripts/Enemies/RailGunGuy.cs"
@@ -426,7 +428,6 @@
 "Assets/Scripts/PlayerMove.cs"
 "Assets/Scripts/Resta.cs"
 "Assets/Scripts/StickyNade.cs"
-"Assets/SniperDrone.cs"
 -langversion:9.0
 /deterministic
 /optimize+
