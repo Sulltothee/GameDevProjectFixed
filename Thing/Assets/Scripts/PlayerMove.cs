@@ -75,8 +75,10 @@ public class PlayerMovement : MonoBehaviour
         //Calling the method for moving the player
         MovePlayer();
 
-        isGrounded = Physics.Raycast(transform.position, Vector3.down, height * 0.5f);
+        //Checking whether the player is grounded 
+        isGrounded = Physics.Raycast(transform.position, Vector3.down, height * 0.5f, LayerMask.GetMask("Terrain"));
 
+        //Decreasing the cooldown for dashing
         if (DashCooldownCurrent > 0) { DashCooldownCurrent -= Time.deltaTime; }
 
         //Jumping and Dashing
@@ -118,21 +120,19 @@ public class PlayerMovement : MonoBehaviour
         {
             MovementSpeed = DefaultMoveSpeed;
         }
+
+        //the player is set to be walking if they manuallt stop sprinting
         else if (Input.GetKeyUp(KeyCode.LeftShift) && State == states.Sprinting)
         {
             State = states.Walking;
         }
-
+        //Setting the player to be walking if they manually stop sliding
         else if (Input.GetKeyDown(KeyCode.LeftControl) && State == states.Sliding)
         {
             State = states.Walking;
         }
-
-        if (rb.linearVelocity.magnitude < 1)
-        {
-            State = states.Walking;
-        }
-
+        
+        //Setting the player's collider to the correct height depending on if they're sliding or not
         if (State == states.Sliding && collide.height == 2)
         {
             collide.height = 1;
@@ -143,10 +143,17 @@ public class PlayerMovement : MonoBehaviour
             transform.position += Vector3.up * 0.5f;
             collide.height = 2; 
         }
+
+        //if the player is too slow they are set to be walking
+        if (rb.linearVelocity.magnitude < 1)
+        {
+            State = states.Walking;
+        }
     }
 
     private void FixedUpdate()
     {
+        //Applying burn damage
         if(Burntime > 0)
         {
             HP -= BurnDmgPerSec * 0.02f;
@@ -194,6 +201,7 @@ public class PlayerMovement : MonoBehaviour
         else { rb.AddForce(MovementSpeed * moveDirection.normalized * Time.deltaTime * Convert.ToInt16(State != states.Sliding)); }
     }
 
+    //This is called by other objects to deal damage to the player
     public void TakeDamage(float damage)
     {
         //Taking the damage
@@ -209,6 +217,7 @@ public class PlayerMovement : MonoBehaviour
         if (CurrentInvulnerabilityTime <= 0) { CurrentInvulnerabilityTime = InvulnerabilityTime; }
     }
 
+    //this is called by other objects to "ignite" the player
     public void ApplyBurn(float Time)
     {
         Burntime += Time;

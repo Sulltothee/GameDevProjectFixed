@@ -6,6 +6,8 @@ public class BulletTestScript : MonoBehaviour
 {
     //the magnitude of velocity the bullet travels at
     public float BulletSpeed = 100;
+
+    //The amount of damage it deals when colliding with an object
     public float Damage = 8;
 
     // Start is called before the first frame update
@@ -24,12 +26,6 @@ public class BulletTestScript : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         //if the bullet hits an object that isn't the player it is "destroyed" (deactivated)
-        
          gameObject.SetActive(false); other.SendMessage("TakeDamage", Damage, SendMessageOptions.DontRequireReceiver); 
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        
     }
 }

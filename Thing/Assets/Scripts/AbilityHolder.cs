@@ -25,30 +25,39 @@ public class AbilityHolder : MonoBehaviour
     //The currently Held abilities
     AbilityInstance[] CurrentAbilities;
 
+    //The UI icons for each ability
     [Tooltip("The UI icons for each ability")]
     public Sprite[] Icons;
 
-    [Tooltip("The UI icons for an empty ability slot")]
+    //The UI icon for an empty ability slot
+    [Tooltip("The UI icon for an empty ability slot")]
     public Sprite EmptyIcon;
 
-    [Tooltip("the gameobjects in the ui that display the abilities")]
+    //The gameobjects in the ui that display the abilities
+    [Tooltip("The gameobjects in the ui that display the abilities")]
     public GameObject[] IconSlots;
 
     //The amount of seconds left until each respective ability can be activated again
     float[] coolDowns;
 
+    //The amount of charge held for the current weapon (used for abilities like the railgun)
     public float CurrentCharge = 0;
 
+    //The default/ current punch damage
     public float PunchDamageDefault = 1;
     float PunchDamage = 1;
+
+    //The maximum range for the punch
     public float MaxRange = 1;
+
+    //How long between punches/ how long until the next punch can be performed
     public float PunchCooldown = 1;
     float PunchCooldownCurrent = 0;
-
 
     // Start is called before the first frame update
     void Start()
     {
+        //Setting the punch damage to the default
         PunchDamage = PunchDamageDefault;
 
         //Instantializing the ability slots
@@ -60,14 +69,23 @@ public class AbilityHolder : MonoBehaviour
 
         //Assigning all the abilities their respective info
         AbilityTypes = new AbilityType[NumOfAbilities];
-        AbilityTypes[0] = new ProjectileWeapon(AbilityType.Names.Pistol, Projectiles[0], Icons[0], 1); 
+        //Pistol
+        AbilityTypes[0] = new ProjectileWeapon(AbilityType.Names.Pistol, Projectiles[0], Icons[0]); 
+        //Grenade
         AbilityTypes[1] = new ProjectileWeapon(AbilityType.Names.Grenade, Projectiles[1], Icons[1]); 
+        //Sticky Grenade
         AbilityTypes[2] = new ProjectileWeapon(AbilityType.Names.StickyNade, Projectiles[2], Icons[2]); 
+        //Molotov Cocktail
         AbilityTypes[3] = new ProjectileWeapon(AbilityType.Names.Molotov, Projectiles[3], Icons[3]); 
+        //Sniper Rifle
         AbilityTypes[4] = new RayCastGun(AbilityType.Names.SniperRifle, Icons[4]); 
+        //Automatic Rifle
         AbilityTypes[5] = new RayCastGun(AbilityType.Names.AutoRifle, Icons[5]); 
+        //Railgun
         AbilityTypes[6] = new RailGun(Icons[6]); 
+        //Grenade Launcher
         AbilityTypes[7] = new ProjectileWeapon(AbilityType.Names.GrenadeLauncher, Projectiles[4], Icons[7]);
+        //Big punch
         AbilityTypes[8] = new BigPunch(Icons[8]);
 
         //Instantializing the cooldowns
@@ -75,32 +93,35 @@ public class AbilityHolder : MonoBehaviour
 
         //Test Stuff, Giving the player example abilities
         CurrentAbilities[0] = new AbilityInstance(AbilityTypes[0]);
-        CurrentAbilities[1] = new AbilityInstance(AbilityTypes[1]);
+        CurrentAbilities[1] = new AbilityInstance(AbilityTypes[8]);
         CurrentAbilities[2] = new AbilityInstance(AbilityTypes[3]);
     }
 
     // Update is called once per frame
     void Update()
     {
-        //When the player clicks (if the ability has remaining uses and the cooldown has passed), the current ability is used
+        //Activating the ability (if the cooldown has passed and it has uses left) based on a variety of conditions depending on the activation type of the ability (if the mouse was pressed this frame for press type, if the mouse is being held for Auto type, the mouse was released for charge types)
         if (((Input.GetKeyDown(KeyCode.Mouse0) && CurrentAbilities[AbilityIndex].abilityType.ActivationType == AbilityType.ActivationTypes.Press) || (Input.GetKey(KeyCode.Mouse0) && CurrentAbilities[AbilityIndex].abilityType.ActivationType == AbilityType.ActivationTypes.Auto) || (Input.GetKeyUp(KeyCode.Mouse0) && CurrentAbilities[AbilityIndex].abilityType.ActivationType == AbilityType.ActivationTypes.Charge)) && CurrentAbilities[AbilityIndex].currentUses > 0 && coolDowns[AbilityIndex] <= 0) {
             CurrentAbilities[AbilityIndex].Activate();
             if (CurrentAbilities[AbilityIndex].currentUses > 0) { coolDowns[AbilityIndex] = CurrentAbilities[AbilityIndex].abilityType.Cooldown; }
         }
+        //if the mouse is being held and the current ability is charge type, the current charge is increased
         else if((Input.GetKey(KeyCode.Mouse0) && CurrentAbilities[AbilityIndex].abilityType.ActivationType == AbilityType.ActivationTypes.Charge))
         {
             CurrentCharge += Time.deltaTime; Math.Clamp(CurrentCharge, 0, 1);
         }
         
-        //Scroll wheel changing what ability is selected
+        //Scroll wheel changing what ability is selected and decreasing charge
         if(Input.mouseScrollDelta.y < 0) { AbilityIndex++; if (AbilityIndex > 3) { AbilityIndex = 0; CurrentCharge = 0; } }
         else if (Input.mouseScrollDelta.y > 0) { AbilityIndex--; if (AbilityIndex < 0) { AbilityIndex = 3; CurrentCharge = 0; } }
 
         //The Punch
         if(Input.GetKeyDown(KeyCode.V) && PunchCooldownCurrent <= 0) 
         {
+            //Checking everything it can hit within the range
             RaycastHit[] Hits = Physics.RaycastAll(transform.position, Camera.main.transform.forward, MaxRange, LayerMask.GetMask("Terrain", "Enemies"));
 
+            //Dealing those collided objects until it hits terrain or the list is empty
             bool HasHitTerrain = false;
             int HitIndex = 0;
             while (!HasHitTerrain && HitIndex < Hits.Length)
@@ -116,9 +137,12 @@ public class AbilityHolder : MonoBehaviour
 
                 HitIndex++;
             }
+            //emptying the charge
             GetComponent<AbilityHolder>().CurrentCharge = 0;
+            //resetting the cooldown to punch
             PunchCooldownCurrent = PunchCooldown;
         }
+        //if the punch cooldown hasn't passed it is decreased
         else if (PunchCooldownCurrent>0)
         {
             PunchCooldownCurrent -= Time.deltaTime;
@@ -149,8 +173,10 @@ public class AbilityHolder : MonoBehaviour
         }
     }
 
+    //Called by other objects to give this abilities
     public bool GiveAbility(AbilityType.Names abilityType)
     {
+        //Checking if there's an empty slot
         int AbilityIndex = -1;
         for(int i = 0;i < 4; i++)
         {
@@ -161,7 +187,9 @@ public class AbilityHolder : MonoBehaviour
             }
         }
 
+        //if theres an empty slot the ability is gained
         if(AbilityIndex > -1) { CurrentAbilities[AbilityIndex] = new AbilityInstance(AbilityTypes[(int)abilityType - 1]); return true; }
+        //if there isnt the function returns false (used to not destroy ability items when they haven't been harvested)
         else return false;
     }
 }
@@ -257,6 +285,7 @@ public class ProjectileWeapon : AbilityType
             {
                     Uses = 3;
                     ActivationType = ActivationTypes.Press;
+                    Cooldown = 1;
                     break;
             }
 
@@ -275,6 +304,7 @@ public class ProjectileWeapon : AbilityType
                 {
                     Uses = 3;
                     ActivationType = ActivationTypes.Press;
+                    Cooldown = 0.1f;
                     break;
                 }
         }
@@ -332,7 +362,7 @@ public class RayCastGun : RaycastAbility
         //Assigning unique values depending on the name
         switch (Name)
         {
-            //if the ability is the pistol...
+            //if the ability is the Sniper rifle...
             case Names.SniperRifle:
                 {
                     Uses = 1;
@@ -341,6 +371,7 @@ public class RayCastGun : RaycastAbility
                     MaxLength = 20;
                     break;
                 }
+            //if the ability is the automatic rifle...
             case Names.AutoRifle:
                 {
                     Uses = 3;
@@ -358,28 +389,43 @@ public class RayCastGun : RaycastAbility
     {
         if(Hits.Length > 0)
         {
-
             Hits[0].collider.gameObject.SendMessage("TakeDamage", Damage, SendMessageOptions.DontRequireReceiver);
         }
     }
 }
 
+//Subclass for the railgun ability from the raycast ability subtype
 public class RailGun : RaycastAbility
 {
+    //The default damage dealt by this
     public float Damage = 8;
 
+    //Constructor
     public RailGun(Sprite icon)
     {
+        //Setting the name
         name = Names.RailGun;
+
+        //Setting the icon
         Icon = icon;
+
+        //Fetching a reference to the player
         Player = GameObject.FindWithTag("Player");
+
+        //Setting the amount of uses
         Uses = 1;
+
+        //Setting the activation type
         ActivationType = ActivationTypes.Charge;
+
+        //Setting the length of the raycast
         MaxLength = 30;
     }
 
+    //Dealing damage
     public override void DoWithRaycast(RaycastHit[] Hits)
     {
+        //Dealing damage to every object hit by the raycast until it hits terrain
         bool HasHitTerrain = false;
         int HitIndex = 0;
         while(!HasHitTerrain && HitIndex < Hits.Length)
@@ -395,21 +441,26 @@ public class RailGun : RaycastAbility
 
             HitIndex++; 
         }
+
+        //Resetting the charge
         Player.GetComponent<AbilityHolder>().CurrentCharge = 0;
     }
 }
 
+//The subclass for the big punch ability
 public class BigPunch : AbilityType
 {
+    //What to do when this is activated
     public override async void Activate()
     {
+        //Fetching a reference to the player's rigidbody
         Rigidbody rb = Player.GetComponent<Rigidbody>();
 
         //Flinging the player forward
         rb.AddForce(Player.transform.GetChild(0).forward * 500);
 
+        //Dealing damage to every object hit by the raycast until it hits terrain
         RaycastHit[] Hits = Physics.RaycastAll(Player.transform.position, Camera.main.transform.forward, 2, LayerMask.GetMask("Terrain", "Enemies"));
-
         bool HasHitTerrain = false;
         int HitIndex = 0;
         while (!HasHitTerrain && HitIndex < Hits.Length)
@@ -426,11 +477,11 @@ public class BigPunch : AbilityType
             HitIndex++;
         }
 
+        //Waiting 200 ms
         await Task.Delay(200);
 
-        //Second hit
+        ///Dealing damage to every object hit by a raycast until it hits terrain (again)
         Hits = Physics.RaycastAll(Player.transform.position, Camera.main.transform.forward, 2, LayerMask.GetMask("Terrain", "Enemies"));
-
         HasHitTerrain = false;
         HitIndex = 0;
         while (!HasHitTerrain && HitIndex < Hits.Length)
@@ -452,18 +503,22 @@ public class BigPunch : AbilityType
         rb.AddForce(Vector3.up * 350);
     }
 
+    //Constructor
     public BigPunch(Sprite icon)
     {
+        //Setting the icon
         Icon = icon;
 
+        //fetching a reference to the player
         Player = GameObject.FindWithTag("Player");
 
+        //Setting the name
         name = Names.BigPunch;
 
+        //Setting the number of uses
         Uses = 1;
 
-        Cooldown = 0;
-
+        //Setting the activation type
         ActivationType = ActivationTypes.Press;
     }
 }

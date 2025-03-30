@@ -4,17 +4,29 @@ public class GrenadeScript : MonoBehaviour
 {
     //the magnitude of velocity the bullet travels at
     public float BulletSpeed = 0;
+
+    //The explosion object that is created when the grenade explodes
     GameObject Explosion;
+
+    //How long it has to exist for until it explodes/ how long until this explodes
     public float AutoExplodeTime = 0;
     float CurrentAutoExplodeTime;
+
+    //if it has exploded or not
     bool HasExploded = false;
 
-    // Start is called before the first frame update
-    private void Start()
+    private void Awake()
     {
-        //When first created it sets its own velocity
+        //When enabled it sets its own velocity
         gameObject.GetComponent<Rigidbody>().linearVelocity = (transform.up * BulletSpeed);
+
+        //fetching the (currently disabled) explosion object
         Explosion = transform.GetChild(0).gameObject;
+
+        //reenabling gravity (it stops using it when it explodes)
+        GetComponent<Rigidbody>().useGravity = true;
+
+        //resetting the explode timer and the explosion status
         CurrentAutoExplodeTime = AutoExplodeTime;
         HasExploded = false;
     }
@@ -23,26 +35,46 @@ public class GrenadeScript : MonoBehaviour
     {
         //When enabled it sets its own velocity
         gameObject.GetComponent<Rigidbody>().linearVelocity = (transform.up * BulletSpeed);
+
+        //fetching the (currently disabled) explosion object
         Explosion = transform.GetChild(0).gameObject;
+
+        //reenabling gravity (it stops using it when it explodes)
         GetComponent<Rigidbody>().useGravity = true;
+
+        //resetting the explode timer and the explosion status
         CurrentAutoExplodeTime = AutoExplodeTime;
         HasExploded = false;
     }
 
     private void FixedUpdate()
     {
-        if(CurrentAutoExplodeTime > 0 && !HasExploded) { 
+        //If it hasn't exploded yet
+        if(CurrentAutoExplodeTime > 0 && !HasExploded) 
+        { 
+            //decreasing the explosion timer
             CurrentAutoExplodeTime -= 0.2f;
-            if (CurrentAutoExplodeTime <= 0) {
+
+            //if the timer is up, it "explodes"
+            if (CurrentAutoExplodeTime <= 0) 
+            {
+                //sets it to have exploded 
                 HasExploded = true;
+
+                //enables the explosion hitbox
                 Explosion.SetActive(true);
+
+                //Disables the explosion hitbox and itself after a timer
                 Invoke("DisableExplosion", 0.5f);
+
+                //Stops itself from moving
                 GetComponent<Rigidbody>().linearVelocity = Vector3.zero;
                 GetComponent<Rigidbody>().useGravity = false;
             }
         }
     }
 
+    //Disables the explosion hitbox and itself after a timer
     private void DisableExplosion()
     {
         Explosion.SetActive(false);
