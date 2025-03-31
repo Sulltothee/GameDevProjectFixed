@@ -1,3 +1,4 @@
+using System;
 using System.Threading.Tasks;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -8,10 +9,10 @@ public class RangeGrunt : EnemyBase
 {
     //The current behavioral state of it
     public enum states { idle,run,death,shoot}
-    public states currentState = states.idle;
+    public states currentState = states.run;
 
     //The animator component
-    Animator animator;
+    public Animator animator;
 
     //The navmeshagent component
     NavMeshAgent Agent;
@@ -22,13 +23,15 @@ public class RangeGrunt : EnemyBase
 
     //How often it attacks/ how long until the next attack
     public float AttackCooldown = 3;
-    float AttackCooldownCurrent = 0;
+    public float AttackCooldownCurrent = 0;
 
     public override void SubFreshStart()
     {
         //fetches the navmeshagent and animator components 
         Agent = GetComponent<NavMeshAgent>();
         animator = GetComponentInChildren<Animator>();
+
+        AttackCooldownCurrent = AttackCooldown;
     }
 
     public override void SubFixedUpdate()
@@ -42,7 +45,7 @@ public class RangeGrunt : EnemyBase
         //Deincrementing the cooldown if it has yet to pass
         if (AttackCooldownCurrent > 0) { AttackCooldownCurrent -= 0.02f; }
         //shooting the if the cooldown has passed, the enemy isn't currently dying and the player is within range and visible
-        else if (currentState!= states.death && (player.transform.position - transform.position).magnitude <= Range && !Physics.Raycast(transform.position, player.transform.position - transform.position,Range, LayerMask.GetMask("Terrain")) && AttackCooldownCurrent <= 0)
+        else if (currentState != states.death && (player.transform.position - transform.position).magnitude <= Range && !Physics.Raycast(transform.position, player.transform.position - transform.position,Range, LayerMask.GetMask("Terrain")) && AttackCooldownCurrent <= 0)
         {
             //changing the state
             currentState = states.shoot;
@@ -86,20 +89,15 @@ public class RangeGrunt : EnemyBase
         //if a deactivated shot isn't found a new one is made
         if (!hasFoundBullet)
         {
-            bullet = GameObject.Instantiate(Projectile, transform.position, Camera.main.transform.rotation);
-            bullet.transform.forward = player.transform.position - transform.position;
-            bullet.transform.GetChild(0).gameObject.GetComponent<Collider>().excludeLayers = LayerMask.GetMask("Items", "Enemies");
+            bullet = GameObject.Instantiate(Projectile, transform.position, transform.rotation);
         }
         //if theres a deactivated shot it is reset and appears to have just been created
-        else
-        {
-            bullet.transform.position = transform.position;
-            bullet.transform.forward = player.transform.position - transform.position;
-            bullet.transform.GetChild(0).gameObject.SetActive(true);
-            bullet.transform.GetChild(0).localPosition = Vector3.zero;
-            bullet.transform.GetChild(0).localRotation = Projectile.transform.GetChild(0).localRotation;
-            bullet.transform.GetChild(0).gameObject.GetComponent<Collider>().excludeLayers = LayerMask.GetMask("Items", "Enemies");
-        }
+        bullet.transform.position = transform.position;
+        bullet.transform.forward = player.transform.position - transform.position;
+        bullet.transform.GetChild(0).gameObject.SetActive(true);
+        bullet.transform.GetChild(0).localPosition = Vector3.zero;
+        bullet.transform.GetChild(0).localRotation = Projectile.transform.GetChild(0).localRotation;
+        bullet.transform.GetChild(0).gameObject.GetComponent<Collider>().excludeLayers = LayerMask.GetMask("Items", "Enemies");
 
         //reenables the pathfinding
         Invoke("enablepathfinding", 1f);

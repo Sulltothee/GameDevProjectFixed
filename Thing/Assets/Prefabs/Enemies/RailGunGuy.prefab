@@ -255,12 +255,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 226f7ed358aef8040b8750a6b70a5302, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentState: 0
   MaxHP: 10
   HP: 0
-  Name: 0
-  AbilityDrop: {fileID: 0}
+  player: {fileID: 0}
+  Name: 7
+  AbilityDrop: {fileID: 7271534160636922282, guid: 5b2dd83dddfe49b4ea54654802bddb6b, type: 3}
   BurnDmgPerSec: 1
+  currentState: 0
   Range: 28
   AttackCooldown: 3
   Damage: 5
@@ -275,7 +276,7 @@ GameObject:
   - component: {fileID: 6035530379435521789}
   m_Layer: 0
   m_Name: RailGunGuy
-  m_TagString: Melee grunt
+  m_TagString: RailGunGuy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

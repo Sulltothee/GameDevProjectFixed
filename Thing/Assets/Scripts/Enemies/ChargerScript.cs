@@ -88,7 +88,7 @@ public class ChargerScript : EnemyBase
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.CompareTag("Terrain") && collision.GetContact(0).point.y > transform.position.y - height/2 && CurrentState == States.Charge)
+        if(collision.gameObject.CompareTag("Terrain") && CurrentState == States.Charge)
         {
             CanCharge = false;
             CurrentState = States.Walk;

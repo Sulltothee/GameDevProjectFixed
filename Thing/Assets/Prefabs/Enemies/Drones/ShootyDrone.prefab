@@ -152,8 +152,8 @@ MonoBehaviour:
   currentState: 0
   MaxHP: 10
   HP: 0
-  Name: 0
-  AbilityDrop: {fileID: 0}
+  Name: 6
+  AbilityDrop: {fileID: 7271534160636922282, guid: 5b2dd83dddfe49b4ea54654802bddb6b, type: 3}
   player: {fileID: 0}
   Speed: 6
   StoppingDistance: 10

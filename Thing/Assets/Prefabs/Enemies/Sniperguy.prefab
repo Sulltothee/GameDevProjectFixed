@@ -304,12 +304,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67acccb1d56ee2c4796ef1fdd0e5d220, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentState: 0
   MaxHP: 10
   HP: 0
-  Name: 0
-  AbilityDrop: {fileID: 0}
+  player: {fileID: 0}
+  Name: 5
+  AbilityDrop: {fileID: 7271534160636922282, guid: 5b2dd83dddfe49b4ea54654802bddb6b, type: 3}
   BurnDmgPerSec: 0
+  currentState: 0
   Range: 20
   AttackCooldown: 3
   Damage: 1

@@ -11,11 +11,12 @@ public class Resta : MonoBehaviour
     }
 
     private void OnCollisionEnter(Collision collision)
-    {
+    { 
         //if this collides with the player they are sent to the start position
         if (collision.gameObject.tag == "Player")
         {
             collision.transform.position = PlayerInitialPos;
         }
+        else {collision.gameObject.SendMessage("TakeDamage", 1000, SendMessageOptions.DontRequireReceiver); } 
     }
 }

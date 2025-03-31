@@ -180,7 +180,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHP: 9
   HP: 0
-  Name: 5
+  player: {fileID: 0}
+  Name: 1
   AbilityDrop: {fileID: 7271534160636922282, guid: 5b2dd83dddfe49b4ea54654802bddb6b, type: 3}
   BurnDmgPerSec: 3
   Range: 3

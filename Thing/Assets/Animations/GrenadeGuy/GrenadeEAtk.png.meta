@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: e1faa221b80253b4cbabe0d8c95578a0
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GrenadeEAtk_0
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 2516
+        width: 906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7617303c5ca6edf4dafe8b8f78a6031f
+      internalID: -616482232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrenadeEAtk_1
+      rect:
+        serializedVersion: 2
+        x: 2446
+        y: 2516
+        width: 906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 450b441bf6d1db9499d627cf8bac638d
+      internalID: 1119645958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrenadeEAtk_2
+      rect:
+        serializedVersion: 2
+        x: 4512
+        y: 2509
+        width: 864
+        height: 1041
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ac8be3d46529384b8521ebbb5da57bf
+      internalID: -519688142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrenadeEAtk_3
+      rect:
+        serializedVersion: 2
+        x: 6564
+        y: 2516
+        width: 871
+        height: 1020
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d2ed1a00438723498ac20d6a08fcda3
+      internalID: 67619301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrenadeEAtk_4
+      rect:
+        serializedVersion: 2
+        x: 8623
+        y: 2516
+        width: 871
+        height: 1020
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4077c8352d080234c91f4a6a6977ff19
+      internalID: 1863764508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrenadeEAtk_5
+      rect:
+        serializedVersion: 2
+        x: 10675
+        y: 2516
+        width: 871
+        height: 1020
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8947824717e437e42939ab73b0d442bb
+      internalID: 24111728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrenadeEAtk_6
+      rect:
+        serializedVersion: 2
+        x: 12734
+        y: 2516
+        width: 871
+        height: 1020
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fd5ec4245dbffb49b351fef15a73c1e
+      internalID: -638484819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrenadeEAtk_7
+      rect:
+        serializedVersion: 2
+        x: 4512
+        y: 464
+        width: 892
+        height: 1111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2aa4782d3b480743bf1425c5e800507
+      internalID: -1404582636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrenadeEAtk_8
+      rect:
+        serializedVersion: 2
+        x: 8552
+        y: 450
+        width: 970
+        height: 1117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a41582514b36a2444a9c8148ed4d3441
+      internalID: 1402084940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrenadeEAtk_9
+      rect:
+        serializedVersion: 2
+        x: 10541
+        y: 457
+        width: 1047
+        height: 1096
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c24cfc53b0190c8459192402a692a53b
+      internalID: 1128513068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrenadeEAtk_11
+      rect:
+        serializedVersion: 2
+        x: 2460
+        y: 464
+        width: 913
+        height: 1068
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 893c75185dccdda40b16d1fa5af2121c
+      internalID: 399031104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrenadeEAtk_12
+      rect:
+        serializedVersion: 2
+        x: 6549
+        y: 464
+        width: 879
+        height: 1061
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e10d5e6ed1d36b48acf5c78daa76769
+      internalID: -674670495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrenadeEAtk_13
+      rect:
+        serializedVersion: 2
+        x: 12586
+        y: 443
+        width: 984
+        height: 1082
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d054bce70ff8164898779fb35dc0cd9
+      internalID: -1506844356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrenadeEAtk_17
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 464
+        width: 864
+        height: 1033
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac232928c49e7e244adfe8a31da87d7e
+      internalID: -1218652357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b80d4525fd72e124fb174d27b69abb26
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GrenadeEAtk_0: -616482232
+      GrenadeEAtk_1: 1119645958
+      GrenadeEAtk_10: 1211802314
+      GrenadeEAtk_11: 399031104
+      GrenadeEAtk_12: -674670495
+      GrenadeEAtk_13: -1506844356
+      GrenadeEAtk_14: 246107250
+      GrenadeEAtk_15: -1736049168
+      GrenadeEAtk_16: 1261608640
+      GrenadeEAtk_17: -1218652357
+      GrenadeEAtk_18: 374931520
+      GrenadeEAtk_19: -1144081788
+      GrenadeEAtk_2: -519688142
+      GrenadeEAtk_20: 297784963
+      GrenadeEAtk_21: 869249322
+      GrenadeEAtk_22: 1884153137
+      GrenadeEAtk_23: 200387605
+      GrenadeEAtk_24: 1925103714
+      GrenadeEAtk_25: -427424682
+      GrenadeEAtk_26: 1188399208
+      GrenadeEAtk_27: 107150374
+      GrenadeEAtk_28: 2121945650
+      GrenadeEAtk_29: 877132920
+      GrenadeEAtk_3: 67619301
+      GrenadeEAtk_4: 1863764508
+      GrenadeEAtk_5: 24111728
+      GrenadeEAtk_6: -638484819
+      GrenadeEAtk_7: -1404582636
+      GrenadeEAtk_8: 1402084940
+      GrenadeEAtk_9: 1128513068
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

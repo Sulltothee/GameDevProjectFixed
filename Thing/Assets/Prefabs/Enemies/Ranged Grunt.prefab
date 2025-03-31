@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 3113471782884539816}
   m_Layer: 0
   m_Name: Ranged Grunt
-  m_TagString: Melee grunt
+  m_TagString: ShooterGrunt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -303,12 +303,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f67d6c01a6b18a42afd8e867c9469f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentState: 0
   MaxHP: 9
   HP: 0
-  Name: 0
-  AbilityDrop: {fileID: 0}
+  player: {fileID: 0}
+  Name: 6
+  AbilityDrop: {fileID: 7271534160636922282, guid: 5b2dd83dddfe49b4ea54654802bddb6b, type: 3}
   BurnDmgPerSec: 3
+  currentState: 0
+  animator: {fileID: 0}
   Range: 10
   Projectile: {fileID: 6377785366157315912, guid: 9ceffbebb82cd7a4fae5b74f5bab1c5c, type: 3}
   AttackCooldown: 3
+  AttackCooldownCurrent: 0

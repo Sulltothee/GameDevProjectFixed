@@ -123,13 +123,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b2f60d5ee905b242a6821419990715e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentState: 2
-  Agent: {fileID: 0}
-  Name: 0
-  AbilityDrop: {fileID: 0}
-  BurnDmgPerSec: 1
   MaxHP: 10
   HP: 0
+  player: {fileID: 0}
+  Name: 0
+  AbilityDrop: {fileID: 7271534160636922282, guid: 5b2dd83dddfe49b4ea54654802bddb6b, type: 3}
+  BurnDmgPerSec: 1
+  CurrentState: 2
+  Agent: {fileID: 0}
   SeeDistance: 100
   ChargeDistance: 10
   ChargeSpeed: 10

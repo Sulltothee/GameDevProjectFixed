@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: 037f947a89a97944ba47fbbadd506e97
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GrenadeEDeath_0
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 2495
+        width: 906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ed82a064d2737b4e81fb2a4fa45d7b1
+      internalID: 179545123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrenadeEDeath_1
+      rect:
+        serializedVersion: 2
+        x: 2523
+        y: 2495
+        width: 857
+        height: 1041
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89572bd0d5c5c004894f69a4225b95c0
+      internalID: -2098987833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrenadeEDeath_2
+      rect:
+        serializedVersion: 2
+        x: 4519
+        y: 2502
+        width: 962
+        height: 1013
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1fd925ab25182c4f8b84ed01fa77dc9
+      internalID: -87584880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrenadeEDeath_3
+      rect:
+        serializedVersion: 2
+        x: 6514
+        y: 2495
+        width: 1033
+        height: 1005
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b14244b49441c624b90e51539fb78549
+      internalID: 1199487800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrenadeEDeath_4
+      rect:
+        serializedVersion: 2
+        x: 8511
+        y: 2425
+        width: 1138
+        height: 1063
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5bbb4c31494b784bb17728f1a7f19bc
+      internalID: -667934271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrenadeEDeath_6
+      rect:
+        serializedVersion: 2
+        x: 10568
+        y: 2439
+        width: 1168
+        height: 1138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5cc4e0e24ecf5841a425a6a728fc400
+      internalID: -1905903969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrenadeEDeath_8
+      rect:
+        serializedVersion: 2
+        x: 12592
+        y: 2440
+        width: 1203
+        height: 1256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 322ccbb20676b9d40a3885ffa24ee3ea
+      internalID: -1682824267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrenadeEDeath_12
+      rect:
+        serializedVersion: 2
+        x: 6385
+        y: 422
+        width: 1331
+        height: 1760
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f3ab069498bb542a8498f3706049de
+      internalID: 631509329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrenadeEDeath_13
+      rect:
+        serializedVersion: 2
+        x: 8419
+        y: 408
+        width: 1468
+        height: 1824
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6b6006c2a635c84fb0c661b72431ca1
+      internalID: -1557941000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrenadeEDeath_15
+      rect:
+        serializedVersion: 2
+        x: 10400
+        y: 387
+        width: 1552
+        height: 1873
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 985025645fea2a5408b2f452f7f7398a
+      internalID: 841148799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrenadeEDeath_17
+      rect:
+        serializedVersion: 2
+        x: 12405
+        y: 415
+        width: 1530
+        height: 1809
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e0893a6a698a554ca1c62cd5ed16a48
+      internalID: 798614907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrenadeEDeath_19
+      rect:
+        serializedVersion: 2
+        x: 4448
+        y: 422
+        width: 1046
+        height: 1717
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 228bf167abd31714480d0e978e9659c2
+      internalID: -799703972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrenadeEDeath_21
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 380
+        width: 1194
+        height: 1733
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 380ceca792fc9d8479394b7ae3327a70
+      internalID: 306030099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrenadeEDeath_23
+      rect:
+        serializedVersion: 2
+        x: 2322
+        y: 309
+        width: 1248
+        height: 1838
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e173d4656a66b74abe2fa73daa8924d
+      internalID: -1695728878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0b318e9f4a77bec41b7bf28302da32c2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GrenadeEDeath_0: 179545123
+      GrenadeEDeath_1: -2098987833
+      GrenadeEDeath_10: 1696787024
+      GrenadeEDeath_11: -664723171
+      GrenadeEDeath_12: 631509329
+      GrenadeEDeath_13: -1557941000
+      GrenadeEDeath_14: 1751310008
+      GrenadeEDeath_15: 841148799
+      GrenadeEDeath_16: 1311188415
+      GrenadeEDeath_17: 798614907
+      GrenadeEDeath_18: -1156895160
+      GrenadeEDeath_19: -799703972
+      GrenadeEDeath_2: -87584880
+      GrenadeEDeath_20: 1268108874
+      GrenadeEDeath_21: 306030099
+      GrenadeEDeath_22: 1512585400
+      GrenadeEDeath_23: -1695728878
+      GrenadeEDeath_24: -221295051
+      GrenadeEDeath_25: -1134888380
+      GrenadeEDeath_26: -678960455
+      GrenadeEDeath_27: 2139814299
+      GrenadeEDeath_28: -629813175
+      GrenadeEDeath_29: -360251854
+      GrenadeEDeath_3: 1199487800
+      GrenadeEDeath_4: -667934271
+      GrenadeEDeath_5: 496617075
+      GrenadeEDeath_6: -1905903969
+      GrenadeEDeath_7: 538664886
+      GrenadeEDeath_8: -1682824267
+      GrenadeEDeath_9: 1320600060
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
