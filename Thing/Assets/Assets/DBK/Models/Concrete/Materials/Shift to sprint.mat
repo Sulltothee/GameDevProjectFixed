@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Shift to sprint
+  m_Shader: {fileID: 4800000, guid: 1fb4d32a4b8c39d4cbbc428e5c3b3224, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _ConcreteNM:
+        m_Texture: {fileID: 2800000, guid: e2f2024fc17d02a4cae64316bfc62502, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DamageColor:
+        m_Texture: {fileID: 2800000, guid: 3920578cb267cd947bed7ce40996407b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DamageNM:
+        m_Texture: {fileID: 2800000, guid: 381eef27937e5464e93f48a9a73d286d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 8428a2a12b5e00d4082eba53b52eff40, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RGBAMaskA:
+        m_Texture: {fileID: 2800000, guid: f6bcb3be2ffc7eb439937251e6b1e988, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RGBAMaskB:
+        m_Texture: {fileID: 2800000, guid: 0cc5a2d9845f1c243a311cd5fe2d190e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TransitionNM:
+        m_Texture: {fileID: 2800000, guid: 4ea5083d09e1aa747b5ad9a32ad2cb74, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord4:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _BareBrightness: 0
+    - _BareSmoothness: 0
+    - _Color: 0
+    - _ConcreteBareRange: 0
+    - _ConcreteBareSmooth: 0
+    - _ConcreteDamageScale: 0
+    - _ConcreteDamageTiling: 0
+    - _CustomColor: 0
+    - _DamageAmount: 0.6
+    - _DamageAmountSmooth: 61.17647
+    - _DamageBrightness: 0
+    - _DamageMultiplier: 0.1946161
+    - _DamageSmoothness: 0
+    - _DirtContrast: 0
+    - _DirtOverlay: 0
+    - _DirtRange: 0
+    - _DirtSmooth: 0
+    - _DirtSmoothness: 0
+    - _EdgesOverlay: 0
+    - _MainSmoothness: 0
+    - _PaintEdgesMultiply: 1
+    - _TransitionAmount: 0
+    - _TransitionBrightness: 0
+    - _TransitionScale: 0
+    - _UseCustomColor: 0
+    - __dirty: 1
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
