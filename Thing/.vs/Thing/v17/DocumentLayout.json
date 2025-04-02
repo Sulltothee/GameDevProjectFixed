@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\89500\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|c:\\users\\89500\\documents\\github\\gamedevprojectfixed\\thing\\assets\\scripts\\playbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|c:\\users\\89500\\documents\\github\\gamedevprojectfixed\\thing\\assets\\scripts\\doorscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F5A6BB8C-EEAE-3888-6A92-F3D67A3EEE45}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\doorscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -14,11 +18,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "DoorScript.cs",
               "DocumentMoniker": "C:\\Users\\89500\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Scripts\\DoorScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\DoorScript.cs",
@@ -28,6 +32,19 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T10:37:47.539Z",
               "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlayButton.cs",
+              "DocumentMoniker": "C:\\Users\\89500\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Scripts\\PlayButton.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayButton.cs",
+              "ToolTip": "C:\\Users\\89500\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Assets\\Scripts\\PlayButton.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayButton.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T07:54:23.478Z",
               "EditorCaption": ""
             }
           ]

@@ -1,11 +1,20 @@
 using UnityEngine;
-using UnityEngine.SceneManagment;
+using UnityEngine.SceneManagement;
 
-public class PlayButton
+public class PlayButton : MonoBehaviour
 {
-    public void PlayGame()
+    [SerializeField]
+   public void PlayGame()
     {
-        SceneManager.LoadSceneAsync("Level 1");
+      SceneManager.LoadScene("Level 1");
+       
+    }
 
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }
+
+
+
