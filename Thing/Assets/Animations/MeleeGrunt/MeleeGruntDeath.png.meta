@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -34,16 +34,16 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -52,9 +52,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -95,12 +95,254 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: MeleeGruntDeath_0
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 2348
+        width: 722
+        height: 1495
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2169154c20f42394d9340ab5e1b9afbe
+      internalID: -290690353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeGruntDeath_1
+      rect:
+        serializedVersion: 2
+        x: 2465
+        y: 2330
+        width: 771
+        height: 1582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58ef4bc7a36935549b1253f699855db6
+      internalID: 1599887063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeGruntDeath_4
+      rect:
+        serializedVersion: 2
+        x: 4559
+        y: 2342
+        width: 742
+        height: 1565
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce7a2a0441501de4e95eb1b354873a39
+      internalID: 1206316571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeGruntDeath_5
+      rect:
+        serializedVersion: 2
+        x: 6683
+        y: 2336
+        width: 997
+        height: 1542
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b6b3451dbb70ab40a729dfa24d43e88
+      internalID: -531456595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeGruntDeath_6
+      rect:
+        serializedVersion: 2
+        x: 8723
+        y: 2300
+        width: 1125
+        height: 1513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92a476a269f4d37418ff9c2d64d5a695
+      internalID: 262121128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeGruntDeath_7
+      rect:
+        serializedVersion: 2
+        x: 10626
+        y: 2281
+        width: 1195
+        height: 1321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee551fbcce87af4f8327e2caca3ac53
+      internalID: 399601136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeGruntDeath_8
+      rect:
+        serializedVersion: 2
+        x: 4391
+        y: 253
+        width: 1476
+        height: 1788
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cc794084853cf348b0bdc7a13b27952
+      internalID: -1285358800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeGruntDeath_10
+      rect:
+        serializedVersion: 2
+        x: 6421
+        y: 229
+        width: 1530
+        height: 1869
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e24581ca3a66d6e4aa46e22e36d4b304
+      internalID: 1860444284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeGruntDeath_12
+      rect:
+        serializedVersion: 2
+        x: 8419
+        y: 236
+        width: 1506
+        height: 1765
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1617760dccdd5a74c9c26b930cc40dfe
+      internalID: -285327811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeGruntDeath_14
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 304
+        width: 1151
+        height: 1729
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20914a3b5fd430941b9df2ed3f6db3ea
+      internalID: -436688103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeGruntDeath_15
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 253
+        width: 1337
+        height: 1801
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84f082fab9eb30646b495128fa2c3196
+      internalID: 1403465218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 9b6d0850f5262044ca3d6233cb30be41
     internalID: 0
     vertices: []
     indices: 
@@ -109,7 +351,29 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MeleeGruntDeath_0: -290690353
+      MeleeGruntDeath_1: 1599887063
+      MeleeGruntDeath_10: 1860444284
+      MeleeGruntDeath_11: -1540560202
+      MeleeGruntDeath_12: -285327811
+      MeleeGruntDeath_13: -834375116
+      MeleeGruntDeath_14: -436688103
+      MeleeGruntDeath_15: 1403465218
+      MeleeGruntDeath_16: -1833708072
+      MeleeGruntDeath_17: -1716117442
+      MeleeGruntDeath_18: 2019215273
+      MeleeGruntDeath_19: 1778257140
+      MeleeGruntDeath_2: 1052662381
+      MeleeGruntDeath_20: 311873611
+      MeleeGruntDeath_21: -1289811632
+      MeleeGruntDeath_3: -64382942
+      MeleeGruntDeath_4: 1206316571
+      MeleeGruntDeath_5: -531456595
+      MeleeGruntDeath_6: 262121128
+      MeleeGruntDeath_7: 399601136
+      MeleeGruntDeath_8: -1285358800
+      MeleeGruntDeath_9: -946202604
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

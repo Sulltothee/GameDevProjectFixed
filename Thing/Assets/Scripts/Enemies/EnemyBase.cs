@@ -14,7 +14,7 @@ public class EnemyBase : MonoBehaviour
     public GameObject AbilityDrop;
 
     //How long it will burn for and how much damage it will take from that burn every second
-    float Burntime;
+    public float Burntime;
     public float BurnDmgPerSec;
 
     //if it's dying
@@ -89,11 +89,12 @@ public class EnemyBase : MonoBehaviour
                 for (int i = 0; i < AllActiveDrops.Length; i++)
                 {
                     GameObject currentObject = AllActiveDrops[i].transform.GetChild(0).gameObject;
-                    if (!currentObject.activeInHierarchy)
+                    if (!currentObject.activeInHierarchy && !HasFoundUsable)
                     {
                         currentObject.SetActive(true);
                         AllActiveDrops[i].transform.position = transform.position;
                         currentObject.GetComponent<AbilityItem>().Type = Name;
+                        currentObject.SendMessage("Resety", transform.position.y);
 
                         HasFoundUsable = true;
                     }

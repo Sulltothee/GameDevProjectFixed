@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -34,16 +34,16 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -52,9 +52,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -95,12 +95,166 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: MeleeGruntRun_0
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 2365
+        width: 530
+        height: 1229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecbbafb400918b24081cc76ccdd6e78d
+      internalID: 1125686970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeGruntRun_2
+      rect:
+        serializedVersion: 2
+        x: 6726
+        y: 2510
+        width: 586
+        height: 1064
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebb30d0c0e2f1e7478c6b2f2ebcb5ea7
+      internalID: -1738592181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeGruntRun_3
+      rect:
+        serializedVersion: 2
+        x: 4666
+        y: 2466
+        width: 526
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1be41887463302b49a919091a6de5401
+      internalID: 1395842582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeGruntRun_5
+      rect:
+        serializedVersion: 2
+        x: 2498
+        y: 2494
+        width: 606
+        height: 1016
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04245cc0633545d48a536263dd1c5371
+      internalID: -487756925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeGruntRun_16
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 466
+        width: 554
+        height: 1040
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f730a9d05ff70794dad81bcacc134aae
+      internalID: 1079169483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeGruntRun_18
+      rect:
+        serializedVersion: 2
+        x: 2566
+        y: 450
+        width: 530
+        height: 1052
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c641fa88a5898b4aa60fe4b153eb7ac
+      internalID: -1818341410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeleeGruntRun_20
+      rect:
+        serializedVersion: 2
+        x: 4630
+        y: 410
+        width: 494
+        height: 1072
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d531805e0e5ae649a969a73589a3f0a
+      internalID: -197282087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 56756377371f2a448a225977d6a8897a
     internalID: 0
     vertices: []
     indices: 
@@ -109,7 +263,35 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MeleeGruntRun_0: 1125686970
+      MeleeGruntRun_1: -1788842499
+      MeleeGruntRun_10: -1471151814
+      MeleeGruntRun_11: 1632562787
+      MeleeGruntRun_12: -1883530358
+      MeleeGruntRun_13: -966314369
+      MeleeGruntRun_14: -1856386355
+      MeleeGruntRun_15: -2126305554
+      MeleeGruntRun_16: 1079169483
+      MeleeGruntRun_17: 2006764392
+      MeleeGruntRun_18: -1818341410
+      MeleeGruntRun_19: -12139844
+      MeleeGruntRun_2: -1738592181
+      MeleeGruntRun_20: -197282087
+      MeleeGruntRun_21: -1084141980
+      MeleeGruntRun_22: -1085527902
+      MeleeGruntRun_23: 530804324
+      MeleeGruntRun_24: 1453432726
+      MeleeGruntRun_25: -1991893047
+      MeleeGruntRun_26: -1012281939
+      MeleeGruntRun_27: 1003811955
+      MeleeGruntRun_3: 1395842582
+      MeleeGruntRun_4: 748095942
+      MeleeGruntRun_5: -487756925
+      MeleeGruntRun_6: 1992690430
+      MeleeGruntRun_7: -1312494096
+      MeleeGruntRun_8: 1438336115
+      MeleeGruntRun_9: -39476224
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

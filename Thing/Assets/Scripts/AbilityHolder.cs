@@ -95,10 +95,14 @@ public class AbilityHolder : MonoBehaviour
         coolDowns = new float[4]; 
 
         //Test Stuff, Giving the player example abilities
-        CurrentAbilities[0] = new AbilityInstance(AbilityTypes[(int)InitialInventory[0] - 1]);
-        CurrentAbilities[1] = new AbilityInstance(AbilityTypes[(int)InitialInventory[1] - 1]);
-        CurrentAbilities[2] = new AbilityInstance(AbilityTypes[(int)InitialInventory[2] - 1]);
-        CurrentAbilities[3] = new AbilityInstance(AbilityTypes[(int)InitialInventory[3] - 1]);
+        for (int i = 0; i < 4 ; i++)
+        {
+            if (InitialInventory[i] != AbilityType.Names.Empty)
+            {
+                CurrentAbilities[i] = new AbilityInstance(AbilityTypes[(int)InitialInventory[i] - 1]);
+            }
+        }
+        
     }
 
     // Update is called once per frame
@@ -134,11 +138,8 @@ public class AbilityHolder : MonoBehaviour
                 {
                     HasHitTerrain = true;
                 }
-                else
-                {
-                    Hits[HitIndex].collider.gameObject.SendMessage("TakeDamage", PunchDamage, SendMessageOptions.DontRequireReceiver);
-                }
 
+                Hits[HitIndex].collider.gameObject.SendMessage("TakeDamage", PunchDamage, SendMessageOptions.DontRequireReceiver);
                 HitIndex++;
             }
             //emptying the charge

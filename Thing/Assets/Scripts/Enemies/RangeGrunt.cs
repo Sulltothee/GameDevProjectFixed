@@ -89,7 +89,7 @@ public class RangeGrunt : EnemyBase
         //if a deactivated shot isn't found a new one is made
         if (!hasFoundBullet)
         {
-            bullet = GameObject.Instantiate(Projectile, transform.position, transform.rotation);
+            bullet = GameObject.Instantiate(Projectile, transform.position, new Quaternion(0,0,0,0));
         }
         //if theres a deactivated shot it is reset and appears to have just been created
         bullet.transform.position = transform.position;

@@ -1,4 +1,3 @@
-using Unity.VisualScripting.ReorderableList;
 using UnityEngine;
 
 public class AbilityItem : MonoBehaviour
@@ -26,7 +25,7 @@ public class AbilityItem : MonoBehaviour
     float CurrentWiggle;
 
     //The initial position of this object
-    Vector3 DefaultPosition;
+    float Defaulty;
 
     private void Awake()
     {
@@ -40,10 +39,15 @@ public class AbilityItem : MonoBehaviour
         SpriteRend = GetComponent<SpriteRenderer>();
         
         //Aquiring the default position
-        DefaultPosition = GetComponent<Transform>().position;
+        Defaulty = transform.position.y;
 
         //resetting this objects position in the sine wave
         CurrentWiggle = 0;
+    }
+
+    public void Resety(float Y)
+    {
+        Defaulty = Y;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -63,7 +67,7 @@ public class AbilityItem : MonoBehaviour
         SpriteRend.sprite = Icons[(int)Type - 1];
 
         //moving this item's height with the sine wave to make it hover/wiggle
-        transform.position = new Vector3( DefaultPosition.x , DefaultPosition.y + (wiggleDistance * Mathf.Sin(CurrentWiggle)), transform.position.z);
+        transform.position = new Vector3( transform.position.x, Defaulty + (wiggleDistance * Mathf.Sin(CurrentWiggle)), transform.position.z);
         CurrentWiggle += WiggleSpeed * 0.02f;
     }
 }

@@ -49,6 +49,9 @@ public class PlayerMovement : MonoBehaviour
     //The player's collider
     CapsuleCollider collide;
 
+    //Test Stuff
+    public bool TestBool;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -104,50 +107,38 @@ public class PlayerMovement : MonoBehaviour
                 State = states.Walking;
             }
         }
+
         //Sliding
-        else if (Input.GetKeyDown(KeyCode.LeftControl) && State != states.Sliding && isGrounded)
+        if (isGrounded && Input.GetKeyDown(KeyCode.LeftControl) && rb.linearVelocity.magnitude > 1 && State != states.Sliding)
         {
-            rb.linearVelocity = Vector3.Scale(rb.linearVelocity, new Vector3(2, 0.5f, 2));
+            transform.position -= Vector3.up * 0.5f;
+            collide.height = 1;
             State = states.Sliding;
         }
-        //Sprinting
-        else if (Input.GetKeyDown(KeyCode.LeftShift) && State != states.Sprinting && State != states.Sliding)
+        //If the player is sliding too slow or manually stops sliding
+        else if((Input.GetKeyDown(KeyCode.LeftControl) || rb.linearVelocity.magnitude < 0.5f) && State == states.Sliding)
         {
-            MovementSpeed *= SprintModifier;
-            State = states.Sprinting;
-        }
-        else if (State != states.Sprinting)
-        {
-            MovementSpeed = DefaultMoveSpeed;
+            State = states.Walking;
         }
 
-        //the player is set to be walking if they manuallt stop sprinting
-        else if (Input.GetKeyUp(KeyCode.LeftShift) && State == states.Sprinting)
+        //Running
+        if (isGrounded && Input.GetKeyDown(KeyCode.LeftShift) && State != states.Sprinting)
+        {
+            State = states.Sprinting;
+            MovementSpeed *= 2;
+        }
+        //If the player is Running too slow or manually stops sliding
+        else if ((Input.GetKeyUp(KeyCode.LeftShift)) && State == states.Sprinting)
         {
             State = states.Walking;
         }
-        //Setting the player to be walking if they manually stop sliding
-        else if (Input.GetKeyDown(KeyCode.LeftControl) && State == states.Sliding)
-        {
-            State = states.Walking;
-        }
-        
-        //Setting the player's collider to the correct height depending on if they're sliding or not
-        if (State == states.Sliding && collide.height == 2)
-        {
-            collide.height = 1;
-            transform.position += Vector3.down * 0.5f;
-        }
-        else if (State != states.Sliding && collide.height == 1) 
+
+        //Setting the defaults 
+        if(State != states.Sprinting && MovementSpeed != DefaultMoveSpeed) {MovementSpeed = DefaultMoveSpeed;}
+        if(State != states.Sliding && collide.height == 1)
         {
             transform.position += Vector3.up * 0.5f;
-            collide.height = 2; 
-        }
-
-        //if the player is too slow they are set to be walking
-        if (rb.linearVelocity.magnitude < 1)
-        {
-            State = states.Walking;
+            collide.height = 2;
         }
     }
 
@@ -184,7 +175,7 @@ public class PlayerMovement : MonoBehaviour
     private void OnCollisionExit(Collision collision) 
     { 
         //WallJumping
-        if (collision.gameObject.tag == "Terrain" && !isGrounded)
+        if (collision.gameObject.tag == "Terrain")
         {
             Onwall = false;
         }
