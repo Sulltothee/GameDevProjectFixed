@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638793079605138450
+      ticks: 638788388577115281
     m_Hash: 1753185355
   m_LockFileStatus:
     m_FilePath: C:/Users/rando/Documents/GitHub/GameDevProjectFixed/Thing/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638793079605353625
+      ticks: 638788388577125826
     m_Hash: 2720486551
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
