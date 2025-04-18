@@ -77,6 +77,7 @@
     <Compile Include="Assets\Scripts\AbilityItem.cs" />
     <Compile Include="Assets\Scripts\GrenadeScript.cs" />
     <Compile Include="Assets\Scripts\Enemies\MeleeGrunt.cs" />
+    <Compile Include="Assets\DoorautoOpen.cs" />
     <Compile Include="Assets\Scripts\CameraTracking.cs" />
     <Compile Include="Assets\Scripts\ExplosionScript.cs" />
     <Compile Include="Assets\Scripts\Enemies\RangeGrunt.cs" />

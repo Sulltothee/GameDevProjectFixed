@@ -401,6 +401,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.43f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.43f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.43f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
+"Assets/DoorautoOpen.cs"
 "Assets/Scripts/AbilityCircle.cs"
 "Assets/Scripts/AbilityHolder.cs"
 "Assets/Scripts/AbilityItem.cs"

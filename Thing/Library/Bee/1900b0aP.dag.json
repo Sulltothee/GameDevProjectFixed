@@ -173,7 +173,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 99,
       "PayloadLength": 57,
-      "PayloadDebugContentSnippet": "C:\\Users\\89667\\Documents\\GitHu",
+      "PayloadDebugContentSnippet": "C:\\Users\\rando\\Documents\\GitHu",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -207,7 +207,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 41275,
       "PayloadLength": 70,
-      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\89667\\Docum",
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\rando\\Docum",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -2809,7 +2809,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 47910,
       "PayloadLength": 57,
-      "PayloadDebugContentSnippet": "C:\\Users\\89667\\Documents\\GitHu",
+      "PayloadDebugContentSnippet": "C:\\Users\\rando\\Documents\\GitHu",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -2843,7 +2843,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 81597,
       "PayloadLength": 70,
-      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\89667\\Docum",
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\rando\\Docum",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -3604,7 +3604,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 88325,
       "PayloadLength": 57,
-      "PayloadDebugContentSnippet": "C:\\Users\\89667\\Documents\\GitHu",
+      "PayloadDebugContentSnippet": "C:\\Users\\rando\\Documents\\GitHu",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -3638,7 +3638,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 121994,
       "PayloadLength": 70,
-      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\89667\\Docum",
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\rando\\Docum",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -4372,7 +4372,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 128720,
       "PayloadLength": 57,
-      "PayloadDebugContentSnippet": "C:\\Users\\89667\\Documents\\GitHu",
+      "PayloadDebugContentSnippet": "C:\\Users\\rando\\Documents\\GitHu",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -4406,7 +4406,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 166935,
       "PayloadLength": 70,
-      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\89667\\Docum",
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\rando\\Docum",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -5250,7 +5250,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 173644,
       "PayloadLength": 57,
-      "PayloadDebugContentSnippet": "C:\\Users\\89667\\Documents\\GitHu",
+      "PayloadDebugContentSnippet": "C:\\Users\\rando\\Documents\\GitHu",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -5284,7 +5284,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 213434,
       "PayloadLength": 70,
-      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\89667\\Docum",
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\rando\\Docum",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -6152,7 +6152,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 220152,
       "PayloadLength": 57,
-      "PayloadDebugContentSnippet": "C:\\Users\\89667\\Documents\\GitHu",
+      "PayloadDebugContentSnippet": "C:\\Users\\rando\\Documents\\GitHu",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -6186,7 +6186,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 309953,
       "PayloadLength": 70,
-      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\89667\\Docum",
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\rando\\Docum",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -7766,7 +7766,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 316683,
       "PayloadLength": 57,
-      "PayloadDebugContentSnippet": "C:\\Users\\89667\\Documents\\GitHu",
+      "PayloadDebugContentSnippet": "C:\\Users\\rando\\Documents\\GitHu",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -7800,7 +7800,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 401598,
       "PayloadLength": 70,
-      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\89667\\Docum",
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\rando\\Docum",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -9357,7 +9357,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 408417,
       "PayloadLength": 57,
-      "PayloadDebugContentSnippet": "C:\\Users\\89667\\Documents\\GitHu",
+      "PayloadDebugContentSnippet": "C:\\Users\\rando\\Documents\\GitHu",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -9391,7 +9391,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 445116,
       "PayloadLength": 70,
-      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\89667\\Docum",
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\rando\\Docum",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -10212,7 +10212,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 452012,
       "PayloadLength": 57,
-      "PayloadDebugContentSnippet": "C:\\Users\\89667\\Documents\\GitHu",
+      "PayloadDebugContentSnippet": "C:\\Users\\rando\\Documents\\GitHu",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -10228,7 +10228,7 @@
       "DisplayName": "Writing Assembly-CSharp.rsp",
       "ActionType": "WriteFile",
       "PayloadOffset": 452155,
-      "PayloadLength": 35022,
+      "PayloadLength": 34338,
       "PayloadDebugContentSnippet": "-target:library\n-out:\"Library/",
       "Inputs": [],
       "InputFlags": [],
@@ -10244,7 +10244,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aP.dag/Assembly-CSharp.rsp2",
       "DisplayName": "Writing Assembly-CSharp.rsp2",
       "ActionType": "WriteFile",
-      "PayloadOffset": 487264,
+      "PayloadOffset": 486580,
       "PayloadLength": 0,
       "PayloadDebugContentSnippet": "",
       "Inputs": [],
@@ -10466,16 +10466,7 @@
         "Library/Bee/artifacts/1900b0aP.dag/Unity.VisualScripting.Flow.ref.dll",
         "Library/Bee/artifacts/1900b0aP.dag/Unity.VisualScripting.State.ref.dll",
         "Library/Bee/artifacts/1900b0aP.dag/UnityEngine.UI.ref.dll",
-        "Assets/Assets/DBK/Scripts/DBK_ColorThemeSelect.cs",
-        "Assets/Assets/Laterns and candles/scripts/CameraFacing.cs",
-        "Assets/Assets/Old Sea Port/EffectExamples/Shared/Scripts/DecalDestroyer.cs",
-        "Assets/Assets/Old Sea Port/EffectExamples/Shared/Scripts/ExtinguishableFire.cs",
-        "Assets/Assets/Old Sea Port/EffectExamples/Shared/Scripts/GunAim.cs",
-        "Assets/Assets/Old Sea Port/EffectExamples/Shared/Scripts/GunShoot.cs",
-        "Assets/Assets/Old Sea Port/EffectExamples/Shared/Scripts/ParticleCollision.cs",
-        "Assets/Assets/Old Sea Port/EffectExamples/Shared/Scripts/ParticleExamples.cs",
-        "Assets/Assets/Old Sea Port/EffectExamples/Shared/Scripts/ParticleMenu.cs",
-        "Assets/Assets/Rocks and Boulders 2/Shaders/RotateGameObject.cs",
+        "Assets/DoorautoOpen.cs",
         "Assets/Scripts/AbilityCircle.cs",
         "Assets/Scripts/AbilityHolder.cs",
         "Assets/Scripts/AbilityItem.cs",
@@ -10510,15 +10501,6 @@
         "Library/Bee/artifacts/1900b0aP.dag/Assembly-CSharp.rsp"
       ],
       "InputFlags": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
         0,
         0,
         0,
@@ -10923,7 +10905,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aP.dag/Assembly-CSharp.dll.mvfrm.rsp",
       "DisplayName": "Writing Assembly-CSharp.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-      "PayloadOffset": 487360,
+      "PayloadOffset": 486676,
       "PayloadLength": 7030,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -11585,7 +11567,7 @@
     {
       "Annotation": "BuildPlayerDataGenerator Library/BuildPlayerData/Player/RuntimeInitializeOnLoads.json (+1 other)",
       "DisplayName": "Extracting script serialization layouts",
-      "Action": "\"C:/Program Files/Unity/Hub/Editor/6000.0.43f1/Editor/Data\\Tools\\netcorerun\\netcorerun.exe\" \"C:/Program Files/Unity/Hub/Editor/6000.0.43f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe\" -a=\"C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Library\\Bee\\PlayerScriptAssemblies\\Assembly-CSharp.dll\" -a=\"C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Library\\Bee\\PlayerScriptAssemblies\\Unity.AI.Navigation.dll\" -a=\"C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Multiplayer.Center.Common.dll\" -a=\"C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Library\\Bee\\PlayerScriptAssemblies\\Unity.TextMeshPro.dll\" -a=\"C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Timeline.dll\" -a=\"C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Core.dll\" -a=\"C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Flow.dll\" -a=\"C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.State.dll\" -a=\"C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Library\\Bee\\PlayerScriptAssemblies\\UnityEngine.UI.dll\" -a=\"C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Library\\PackageCache\\com.unity.ext.nunit@60ef35ffd3cd\\net40\\unity-custom\\nunit.framework.dll\" -a=\"C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Library\\PackageCache\\com.unity.visualscripting@1b53f46e931b\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\\Unity.VisualScripting.Antlr3.Runtime.dll\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.43f1\\Editor\\Data\\Managed\\UnityEngine\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.43f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netfx\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.43f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netstandard\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.43f1\\Editor\\Data\\NetStandard\\EditorExtensions\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.43f1\\Editor\\Data\\NetStandard\\Extensions\\2.0.0\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.43f1\\Editor\\Data\\NetStandard\\ref\\2.1.0\" -s=\"C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Library\\Bee\\PlayerScriptAssemblies\" -s=\"C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Library\\PackageCache\\com.unity.ext.nunit@60ef35ffd3cd\\net40\\unity-custom\" -s=\"C:\\Users\\89667\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Library\\PackageCache\\com.unity.visualscripting@1b53f46e931b\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\" -o=\"Library/BuildPlayerData/Player\" -rn=\"RuntimeInitializeOnLoads.json\" -tn=\"TypeDb-All.json\"",
+      "Action": "\"C:/Program Files/Unity/Hub/Editor/6000.0.43f1/Editor/Data\\Tools\\netcorerun\\netcorerun.exe\" \"C:/Program Files/Unity/Hub/Editor/6000.0.43f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe\" -a=\"C:\\Users\\rando\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Library\\Bee\\PlayerScriptAssemblies\\Assembly-CSharp.dll\" -a=\"C:\\Users\\rando\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Library\\Bee\\PlayerScriptAssemblies\\Unity.AI.Navigation.dll\" -a=\"C:\\Users\\rando\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Multiplayer.Center.Common.dll\" -a=\"C:\\Users\\rando\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Library\\Bee\\PlayerScriptAssemblies\\Unity.TextMeshPro.dll\" -a=\"C:\\Users\\rando\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Timeline.dll\" -a=\"C:\\Users\\rando\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Core.dll\" -a=\"C:\\Users\\rando\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Flow.dll\" -a=\"C:\\Users\\rando\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.State.dll\" -a=\"C:\\Users\\rando\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Library\\Bee\\PlayerScriptAssemblies\\UnityEngine.UI.dll\" -a=\"C:\\Users\\rando\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Library\\PackageCache\\com.unity.ext.nunit@60ef35ffd3cd\\net40\\unity-custom\\nunit.framework.dll\" -a=\"C:\\Users\\rando\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Library\\PackageCache\\com.unity.visualscripting@1b53f46e931b\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\\Unity.VisualScripting.Antlr3.Runtime.dll\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.43f1\\Editor\\Data\\Managed\\UnityEngine\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.43f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netfx\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.43f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netstandard\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.43f1\\Editor\\Data\\NetStandard\\EditorExtensions\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.43f1\\Editor\\Data\\NetStandard\\Extensions\\2.0.0\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.43f1\\Editor\\Data\\NetStandard\\ref\\2.1.0\" -s=\"C:\\Users\\rando\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Library\\Bee\\PlayerScriptAssemblies\" -s=\"C:\\Users\\rando\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Library\\PackageCache\\com.unity.ext.nunit@60ef35ffd3cd\\net40\\unity-custom\" -s=\"C:\\Users\\rando\\Documents\\GitHub\\GameDevProjectFixed\\Thing\\Library\\PackageCache\\com.unity.visualscripting@1b53f46e931b\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\" -o=\"Library/BuildPlayerData/Player\" -rn=\"RuntimeInitializeOnLoads.json\" -tn=\"TypeDb-All.json\"",
       "Inputs": [
         "C:/Program Files/Unity/Hub/Editor/6000.0.43f1/Editor/Data/Tools/netcorerun/netcorerun.exe",
         "C:/Program Files/Unity/Hub/Editor/6000.0.43f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe",
@@ -11841,6 +11823,6 @@
   "SharedResources": [],
   "Scanners": [],
   "Identifier": "Library/Bee/1900b0aP.dag.json",
-  "PayloadsFile": "C:/Users/89667/Documents/GitHub/GameDevProjectFixed/Thing/Library/Bee/1900b0aP.dag.payloads",
+  "PayloadsFile": "C:/Users/rando/Documents/GitHub/GameDevProjectFixed/Thing/Library/Bee/1900b0aP.dag.payloads",
   "RelativePathToRoot": "../.."
 }

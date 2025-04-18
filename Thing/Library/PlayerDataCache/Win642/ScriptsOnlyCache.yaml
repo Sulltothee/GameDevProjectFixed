@@ -4,15 +4,22 @@ ScriptsOnlyBuild:
     - AbilityCircle
     - AbilityHolder
     - AbilityItem
+    - Billboarder
     - BulletTestScript
     - CameraTracking
     - DoorScript
+    - DoorautoOpen
     - ExplosionScript
     - GrenadeScript
+    - MeleeGrunt
     - MolotovExplosion
     - MolotovScript
+    - OpeningDoor
     - PlayerMovement
+    - RangeGrunt
     - StickyNade
+    Unity.AI.Navigation.dll:
+    - Unity.AI.Navigation.NavMeshSurface
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.Graphs.dll:
@@ -20,6 +27,7 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.CommandLineTest.RunData
@@ -36,7 +44,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
   methodsToPreserve: []
   sceneClasses:
-    Assets/Scenes/Level 1.unity:
+    Assets/Scenes/Level 1 but good.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -57,15 +65,15 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
-    - Class: 61
-      Script: {instanceID: 0}
-    - Class: 64
-      Script: {instanceID: 0}
     - Class: 65
+      Script: {instanceID: 0}
+    - Class: 74
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
-    - Class: 90
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 91
       Script: {instanceID: 0}
     - Class: 95
       Script: {instanceID: 0}
@@ -74,35 +82,47 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 8574}
+      Script: {instanceID: 8466}
     - Class: 114
-      Script: {instanceID: 8900}
+      Script: {instanceID: 8590}
     - Class: 114
-      Script: {instanceID: 9960}
+      Script: {instanceID: 8916}
     - Class: 114
-      Script: {instanceID: 9962}
+      Script: {instanceID: 9888}
     - Class: 114
-      Script: {instanceID: 10030}
+      Script: {instanceID: 9954}
     - Class: 114
-      Script: {instanceID: 11678}
+      Script: {instanceID: 9976}
     - Class: 114
-      Script: {instanceID: 11856}
+      Script: {instanceID: 9978}
     - Class: 114
-      Script: {instanceID: 12432}
+      Script: {instanceID: 10046}
     - Class: 114
-      Script: {instanceID: 12622}
+      Script: {instanceID: 11694}
     - Class: 114
-      Script: {instanceID: 13212}
+      Script: {instanceID: 11872}
     - Class: 114
-      Script: {instanceID: 13282}
+      Script: {instanceID: 12448}
     - Class: 114
-      Script: {instanceID: 14016}
+      Script: {instanceID: 12638}
     - Class: 114
-      Script: {instanceID: 14056}
+      Script: {instanceID: 13206}
     - Class: 114
-      Script: {instanceID: 14444}
+      Script: {instanceID: 13228}
     - Class: 114
-      Script: {instanceID: 15048}
+      Script: {instanceID: 13298}
+    - Class: 114
+      Script: {instanceID: 14032}
+    - Class: 114
+      Script: {instanceID: 14072}
+    - Class: 114
+      Script: {instanceID: 14460}
+    - Class: 114
+      Script: {instanceID: 14760}
+    - Class: 114
+      Script: {instanceID: 15064}
+    - Class: 114
+      Script: {instanceID: 37666}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -111,13 +131,9 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
+    - Class: 195
+      Script: {instanceID: 0}
     - Class: 196
-      Script: {instanceID: 0}
-    - Class: 198
-      Script: {instanceID: 0}
-    - Class: 199
-      Script: {instanceID: 0}
-    - Class: 205
       Script: {instanceID: 0}
     - Class: 212
       Script: {instanceID: 0}
@@ -129,7 +145,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    - Class: 850595691
+    - Class: 238
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -314,7 +330,7 @@ ScriptsOnlyBuild:
     className: RectMask2D
   - hash:
       serializedVersion: 2
-      Hash: 3022272e15399405a6e6a004fb28012c
+      Hash: 9e3717c40a90257045bfc885a873bfb7
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: EnemyBase
@@ -344,7 +360,7 @@ ScriptsOnlyBuild:
     className: OpeningDoor
   - hash:
       serializedVersion: 2
-      Hash: 0ed6581accd03ee3bffa3afed032158f
+      Hash: 50a89b46eec5ea2edbe3f30eeb806665
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: MeleeGrunt
@@ -482,7 +498,7 @@ ScriptsOnlyBuild:
     className: SniperDrone
   - hash:
       serializedVersion: 2
-      Hash: 9c709e9d827888fe84520c35f8ad279b
+      Hash: a7625631b32c6e7778fc431235e8a345
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: ChargerScript
@@ -860,7 +876,7 @@ ScriptsOnlyBuild:
     className: CanvasScaler
   - hash:
       serializedVersion: 2
-      Hash: 65342bea17e76c543946d93bdadbb6eb
+      Hash: e84341f4bb19c316dbfe467b3da08911
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: BigMelee
@@ -890,7 +906,7 @@ ScriptsOnlyBuild:
     className: UnityOnTriggerExit2DMessageListener
   - hash:
       serializedVersion: 2
-      Hash: bac93fccfdc13b0f5936a380cd49aeb1
+      Hash: 46438e0bd05d33c18006f66245a8fd38
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: RailGunGuy
@@ -1046,7 +1062,7 @@ ScriptsOnlyBuild:
     className: UnityOnMouseOverMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 5f03c1da6c40af4c530b5e21d0b9c3fa
+      Hash: a7efc6b0e370d49719f6795632f3b829
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: RangeGrunt
@@ -1076,7 +1092,7 @@ ScriptsOnlyBuild:
     className: UnityOnCollisionStay2DMessageListener
   - hash:
       serializedVersion: 2
-      Hash: e8aaba158ef9eab85f6b271c531da1e0
+      Hash: 4b5d39553f0b3b3086758d29455d0e41
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: SniperGuy
@@ -1106,59 +1122,11 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 2536d8a447fcb6c2ca039eb8b9eda8a8
+      Hash: f5c18d4b9711eb5a67d010cc63d78289
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: RotateGameObject
-  - hash:
-      serializedVersion: 2
-      Hash: ecb82fa069f447e07427a2f3b70a7ccd
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: GunShoot
-  - hash:
-      serializedVersion: 2
-      Hash: 89ca47cea2a1f8f83a1bac574ca8e424
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: GunAim
-  - hash:
-      serializedVersion: 2
-      Hash: b4f05a593336f724236cdb4fdb4d61cd
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: ParticleCollision
-  - hash:
-      serializedVersion: 2
-      Hash: f41afcb9a4025cf91d39ebcd0074d37a
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: ParticleMenu
-  - hash:
-      serializedVersion: 2
-      Hash: 9a2162ebe7303f13b89ba4fcb5e96459
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: ExtinguishableFire
-  - hash:
-      serializedVersion: 2
-      Hash: 161a62664f39fa8e8e5d0fe1aeca49fa
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: DecalDestroyer
-  - hash:
-      serializedVersion: 2
-      Hash: 3c9efede5efcf06f71342438c190b1f4
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: CameraFacing
-  - hash:
-      serializedVersion: 2
-      Hash: 1ea4f057a4af8340dba67fb18cdca1fa
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: DBK_ColorThemeSelect
+    className: DoorautoOpen
   platform: 19
   scenePathNames:
-  - Assets/Scenes/Level 1.unity
-  playerPath: C:/Users/89667/Downloads/Thing.exe
+  - Assets/Scenes/Level 1 but good.unity
+  playerPath: C:/Users/rando/Downloads/GameDevProj level 1/Thing.exe
