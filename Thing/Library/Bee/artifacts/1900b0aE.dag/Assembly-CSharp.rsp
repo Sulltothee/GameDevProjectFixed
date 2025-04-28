@@ -427,6 +427,7 @@
 "Assets/Scripts/MolotovExplosion.cs"
 "Assets/Scripts/MolotovScript.cs"
 "Assets/Scripts/OpeningDoor.cs"
+"Assets/Scripts/PlayButton.cs"
 "Assets/Scripts/PlayerMove.cs"
 "Assets/Scripts/Resta.cs"
 "Assets/Scripts/StickyNade.cs"

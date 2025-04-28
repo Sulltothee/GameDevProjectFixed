@@ -178,7 +178,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 44.553158
+  field of view: 40
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -205,7 +205,7 @@ Transform:
   m_GameObject: {fileID: 25270559}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 938, y: 190, z: -455}
+  m_LocalPosition: {x: 938, y: 190, z: -486.52}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -294,13 +294,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: dae6c637fbb397644a9464c072946cad, type: 3}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1781196480}
+        m_TargetAssemblyTypeName: PlayButton, Assembly-CSharp
+        m_MethodName: PlayGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -684,7 +684,7 @@ Canvas:
   m_GameObject: {fileID: 1663160180}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 25270561}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -731,8 +731,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1781196478}
   - component: {fileID: 1781196479}
+  - component: {fileID: 1781196480}
   m_Layer: 5
-  m_Name: IMG_0880
+  m_Name: MainMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -747,8 +748,8 @@ Transform:
   m_GameObject: {fileID: 1781196477}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3, y: -133, z: 66}
-  m_LocalScale: {x: 74.61458, y: 61.827328, z: 42.378193}
+  m_LocalPosition: {x: 205, y: -231, z: 66}
+  m_LocalScale: {x: 50.03167, y: 41.45737, z: 28.41605}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1663160184}
@@ -808,6 +809,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1781196480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781196477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dae6c637fbb397644a9464c072946cad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1823350637
 GameObject:
   m_ObjectHideFlags: 0
@@ -1244,7 +1257,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1960194367}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1781196480}
+        m_TargetAssemblyTypeName: PlayButton, Assembly-CSharp
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1960194367
 MonoBehaviour:
   m_ObjectHideFlags: 0
